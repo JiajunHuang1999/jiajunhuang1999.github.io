@@ -78,8 +78,8 @@ Bachelor of Engineering in Electronic Information Engineering
 
 ### Selected Awards
 - First Place Award at ACM Student Research Competition (Graduate) in SC23 
-- Dissertation Completion Fellowship Award, (Highest in UCR)
-- Dean's Distinguished Fellowship, (Highest in UCR)
+- Dissertation Completion Fellowship Award, UC Riverside
+- Dean's Distinguished Fellowship, UC Riverside
 - ACM SRC Travel Grant for SC23
 - NSF Student Travel grant for IEEE Cluster 2023 
 - James Watt Innovative Talent Scholarship, (3%)
