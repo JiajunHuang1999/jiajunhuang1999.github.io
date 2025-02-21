@@ -78,9 +78,10 @@ Bachelor of Engineering in Electronic Information Engineering
 
 ### Selected Awards
 - First Place Award at ACM Student Research Competition (Graduate) in SC23 
+- Dissertation Completion Fellowship Award, (Highest in UCR)
+- Dean's Distinguished Fellowship, (Highest in UCR)
 - ACM SRC Travel Grant for SC23
-- NSF Student Travel grant for IEEE Cluster 2023
-- Dean's Distinguished Fellowship, (Highest in UCR) 
+- NSF Student Travel grant for IEEE Cluster 2023 
 - James Watt Innovative Talent Scholarship, (3%)
 - 1st Class Academic Scholarship, (3%)
 - UESTC Outstanding Student Scholarship, (5%) thrice 
