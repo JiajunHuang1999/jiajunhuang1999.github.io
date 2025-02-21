@@ -10,10 +10,13 @@ Click [<mark>Here</mark>](https://scholar.google.com/citations?user=lv5EK6AAAAAJ
 <div style="height: 200px; overflow: auto;">
 <ul>
 	<li>
-		[11/2024] Will present our paper "hZCCL: Accelerating Collective Communication with Co-Designed Homomorphic Compression" at <a href="https://sc24.supercomputing.org">SC2024</a> in Atlanta, Georgia.
+		[2/2025] I have won the Dissertation Completion Fellowship Award from the University of California, Riverside. This recognition identifies me as one of the top Ph.D. graduates in my program and university.
 	</li>
 	<li>
-		[9/2024] Will present our paper "FT K-Means: A High-Performance K-Means on GPU with Fault Tolerance" at <a href="https://clustercomp.org/2024/">CLUSTER2024</a> in Kobe, Japan.
+		[11/2024] Presented our paper "hZCCL: Accelerating Collective Communication with Co-Designed Homomorphic Compression" at <a href="https://sc24.supercomputing.org">SC2024</a> in Atlanta, Georgia.
+	</li>
+	<li>
+		[9/2024] Presented our paper "FT K-Means: A High-Performance K-Means on GPU with Fault Tolerance" at <a href="https://clustercomp.org/2024/">CLUSTER2024</a> in Kobe, Japan.
 	</li>
 	<li>
 		[6/2024] Presented our paper <a href="https://dl.acm.org/doi/abs/10.1145/3650200.3656636"><em>"gZCCL: Compression-Accelerated Collective Communication Framework for GPU Clusters"</em></a> at <a href="https://ics2024.github.io">ICS2024</a> in Kyoto, Japan.
