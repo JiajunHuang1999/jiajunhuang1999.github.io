@@ -1,7 +1,6 @@
 ---
 permalink: /markdown/
 title: "Ph.D. Positions in Computer Science at USF, HPC & AI, Full Scholarship"
-subtitle: "HPC & AI, Full Scholarship"
 author_profile: true
 redirect_from: 
   - /md/
@@ -17,7 +16,7 @@ The University of South Florida (USF) is one of the top three flagship public re
 * Rankings & Research Excellence
     * Ranked #45 among U.S. public universities (fastest-growing in the last decade)
     * Top 50 in research expenditures (NSF ranking), second only to the University of Florida in Florida
-    * Rapid expansion in computing: In Fall 2025, the Department of Computer Science will be upgraded to the School of AI, Cybersecurity, and Computing, with major investments in HPC and AI research
+    * Rapid expansion in computing: In Fall 2025, the Department of Computer Science will be upgraded to the College of AI, Cybersecurity, and Computing, with major investments in HPC and AI research
 * Lifestyle & Job Opportunities
     * One of the happiest cities in the U.S., featuring top-rated white sand beaches & a warm climate
     * Prime location: Tampa Bay is Florida’s second-largest metropolitan area, just one hour from Disney World & Universal Studios in Orlando
@@ -43,7 +42,7 @@ The University of South Florida (USF) is one of the top three flagship public re
 ### Application Process
 Flexible Start Dates: Fall 2025 / Spring 2026 / Fall 2026
 How to Apply:
-1. Email Subject: PhD Application [Spring/Fall] 2025/2026 [Your Name]
+1. Email Subject: PhD Application [Spring/Fall] [2025/2026] [Your Name]
 2. Email Content:
     * Self-introduction (including research experience & interests)
     * Resume (CV)
