@@ -82,19 +82,47 @@ Graduated with Honors of the First Class
 Bachelor of Engineering in Electronic Information Engineering  
 
 ### Selected Awards
-- First Place Award at ACM Student Research Competition (Graduate) in SC23 
-- Dissertation Completion Fellowship Award, UC Riverside
-- Dean's Distinguished Fellowship, UC Riverside
-- ACM SRC Travel Grant for SC23
-- NSF Student Travel grant for IEEE Cluster 2023 
-- James Watt Innovative Talent Scholarship, (3%)
-- 1st Class Academic Scholarship, (3%)
-- UESTC Outstanding Student Scholarship, (5%) thrice 
-- Excellent bachelor’s degree thesis (3%)
-- Outstanding Individual of UESTC Summer Camp, twice
-- Glasgow Excellent Volunteer Certificate
-- Outstanding Individual of Summer Social Practice 
-
+<h3>Selected Awards</h3>
+<div style="height: 200px; overflow: auto;">
+<ul>
+	<li>
+  First Place Award at ACM Student Research Competition (Graduate) in SC23 
+  </li>
+  <li>
+  Dissertation Completion Fellowship Award, UC Riverside
+  </li>
+  <li>
+  Dean's Distinguished Fellowship, UC Riverside
+  </li>
+  <li>
+  ACM SRC Travel Grant for SC23
+  </li>
+  <li>
+  NSF Student Travel grant for IEEE Cluster 2023 
+  </li>
+  <li>
+  James Watt Innovative Talent Scholarship, (3%)
+  </li>
+  <li>
+  1st Class Academic Scholarship, (3%)
+  </li>
+  <li>
+  UESTC Outstanding Student Scholarship, (5%) thrice 
+  </li>
+  <li>
+  Excellent bachelor’s degree thesis (3%)
+  </li>
+  <li>
+  Outstanding Individual of UESTC Summer Camp, twice
+  </li>
+  <li>
+  Glasgow Excellent Volunteer Certificate
+  </li>
+  <li>
+  Outstanding Individual of Summer Social Practice 
+</li>
+</ul>
+</div>
 
 <h3>Talks & Presentations</h3>
 <div style="height: 200px; overflow: auto;">
