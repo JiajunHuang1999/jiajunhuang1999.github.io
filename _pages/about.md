@@ -128,7 +128,7 @@ Bachelor of Engineering in Electronic Information Engineering
 
 ### Students
 
-Benjamin De Jong (Elmhurst Jans Fellow & Summer Intern from Argonne National Laboratory)
+- Benjamin De Jong (Elmhurst Jans Fellow & Summer Intern from Argonne National Laboratory)
 
 <h3>Talks & Presentations</h3>
 <div style="height: 200px; overflow: auto;">
