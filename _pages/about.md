@@ -15,8 +15,9 @@ I am the founder of [ZCCL.org](https://zccl.org), an initiative developed in col
 
 ### <span style="color: rgb(52, 152, 219);">Job opportunities</span>
 
-I am actively hiring 3-4 self-motivated Ph.D. Students with full scholarship to work with me in high-performance computing and communication, high-performance deep learning, parallel & distributed computing, and big data management & analytics. 
-Click [here](https://jiajunhuang1999.github.io/markdown/) for more hiring information before sending me emails.
+I am actively recruiting 3–4 highly motivated Ph.D. students with full scholarships to join my research group. Areas of focus include high-performance computing and communication, high-performance deep learning, parallel & distributed computing, and big data management & analytics.
+
+Click [here](https://jiajunhuang1999.github.io/markdown/) for more details before reaching out via email.
 
 <h3>News</h3>
 <div style="height: 200px; overflow: auto;">
