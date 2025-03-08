@@ -13,6 +13,15 @@ Hi, my name is **Jiajun Huang (黄嘉俊)**. I am currently a CS Ph.D. candidate
 
 I am the founder of [ZCCL.org](https://zccl.org), an initiative developed in collaboration with scientists at Argonne National Laboratory. [ZCCL.org](https://zccl.org) is dedicated to advancing both compression and communication and has introduced the first compression-accelerated collective communications library--[ZCCL](https://github.com/ZCCLorg/zccl.git), enabling direct communication and computation with compressed data. You can explore my publications [<mark>here</mark>](https://scholar.google.com/citations?user=lv5EK6AAAAAJ&hl). Feel free to reach out to me at jhuan380(at)ucr.edu.
 
+### <span style="color: rgb(52, 152, 219);">Job opportunities</span>
+
+I am actively hiring 3-4 self-motivated Ph.D. Students with full scholarship to work with me in high-performance computing and communication, high-performance deep learning, parallel & distributed computing, and big data management & analytics. 
+Click [here](https://jiajunhuang1999.github.io/markdown/) for more hiring information before sending me emails.
+
+Jiajun Huang will join the College of AI, Cybersecurity, and Computing at the University of South Florida (USF) as an Assistant Professor in Fall 2025 and is recruiting 3-4 Ph.D. students for Fall 2025, Spring 2026, or Fall 2026. Dr. Huang earned his Bachelor’s degree from the University of Electronic Science and Technology of China (UESTC) and the University of Glasgow (First-Class Honors) in 2021 and will receive his Ph.D. in Computer Science from the University of California, Riverside (2022-2025). His research interests span high-performance computing and communication, high-performance deep learning, parallel & distributed computing, and big data management & analytics.
+He has published over ten papers in top-tier computer systems conferences such as SC, ICS, IPDPS, and SIGMOD, and won the First Place Award in the ACM Student Research Competition at SC'23. Dr. Huang actively collaborates with U.S. national laboratories, and admitted students will have access to some of the world’s most advanced supercomputers, including Frontier (world’s 2nd fastest), Aurora (world’s 3rd fastest), and NVIDIA’s HPC systems. Exceptional students will also have the opportunity to intern at national labs during the summer, working alongside leading scientists on cutting-edge research.
+Click here for more hiring information.
+
 <h3>News</h3>
 <div style="height: 200px; overflow: auto;">
 <ul>
