@@ -1,6 +1,7 @@
 ---
 permalink: /markdown/
 title: "Ph.D. Positions in Computer Science at USF, HPC & AI, Full Scholarship"
+subtitle: "HPC & AI, Full Scholarship"
 author_profile: true
 redirect_from: 
   - /md/
