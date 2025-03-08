@@ -129,7 +129,6 @@ Bachelor of Engineering in Electronic Information Engineering
 </div>
 
 ### Students
-
 - Benjamin De Jong (Elmhurst Jans Fellow & Summer Intern from Argonne National Laboratory)
 
 <h3>Talks & Presentations</h3>
@@ -164,7 +163,7 @@ Bachelor of Engineering in Electronic Information Engineering
 - Reviewers & Subreviewers: IEEE’s Transactions on Computers, CLUSTER '23, IPDPS '23, IPDPS '24, CCGRID '24, HiPC '24
 - Student Volunteers: SC '21, SC '22
 
-### Personal interests
+### Personal Interests
 - Music: 🎷 Saxophone, Cucurbit flute (Hulusi), Bamboo flute (Dizi), Vertical bamboo flute (Xiao)   
 - Sports: 🏓 Table tennis
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=000000&w=500&t=tt&d=RKFC0tf2HkUKuOKvsqRsBycAaOSTK6mnDby741hhPhI&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
