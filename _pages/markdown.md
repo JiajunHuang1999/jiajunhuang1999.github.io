@@ -1,6 +1,6 @@
 ---
 permalink: /markdown/
-title: "Ph.D. Positions in Computer Science at the University of South Florida (USF) | HPC & AI | Full Scholarship"
+title: "Ph.D. Positions in Computer Science at USF, HPC & AI, Full Scholarship"
 author_profile: true
 redirect_from: 
   - /md/
