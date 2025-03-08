@@ -1,13 +1,11 @@
 ---
 permalink: /markdown/
-title: "Markdown"
+title: "Ph.D. Positions in Computer Science at the University of South Florida (USF) | HPC & AI | Full Scholarship"
 author_profile: true
 redirect_from: 
   - /md/
   - /markdown.html
 ---
-
-## Ph.D. Positions in Computer Science at the University of South Florida (USF) | HPC & AI | Full Scholarship
 
 ### About the Advisor
 Jiajun Huang will join the College of AI, Cybersecurity, and Computing at the University of South Florida (USF) as an Assistant Professor in Fall 2025 and is recruiting 3-4 Ph.D. students for Fall 2025, Spring 2026, or Fall 2026. Dr. Huang earned his Bachelor’s degree from the University of Electronic Science and Technology of China (UESTC) and the University of Glasgow (First-Class Honors) in 2021 and will receive his Ph.D. in Computer Science from the University of California, Riverside (2022-2025). His research interests span high-performance computing and communication, high-performance deep learning, parallel & distributed computing, and big data management & analytics.
