@@ -9,7 +9,7 @@ redirect_from:
   - /profile.html
 ---
 
-Hi, my name is **Jiajun Huang (黄嘉俊)**. I will be joining the University of South Florida (USF) as an Assistant Professor in Fall 2025 and am [recruiting](https://jiajunhuang1999.github.io/markdown/) multiple Ph.D. students. I am currently a CS Ph.D. candidate at the [University of California, Riverside](https://www.ucr.edu) supervised by Dr. [Zizhong Chen](https://www.cs.ucr.edu/~chen/superlab/people.html), and I will be graduating in June 2025. I have also been a long-term research intern at the [MPICH](https://www.mpich.org) team and [SZ](https://github.com/szcompressor) team in the [Argonne National Laboratory](https://www.anl.gov), where I have collaborated with Dr. [Sheng Di](https://www.mcs.anl.gov/~shdi/), Dr. [Yanfei Guo](https://www.anl.gov/profile/yanfei-guo), Dr. [Rajeev Thakur](https://web.cels.anl.gov/~thakur/), and Dr. [Franck Cappello](https://www.anl.gov/profile/franck-cappello).
+Hi, my name is **Jiajun Huang (黄嘉俊)**. I will be joining the University of South Florida (USF) as an Assistant Professor in Fall 2025 and am [hiring](https://jiajunhuang1999.github.io/markdown/) multiple Ph.D. students. I am currently a CS Ph.D. candidate at the [University of California, Riverside](https://www.ucr.edu) supervised by Dr. [Zizhong Chen](https://www.cs.ucr.edu/~chen/superlab/people.html), and I will be graduating in June 2025. I have also been a long-term research intern at the [MPICH](https://www.mpich.org) team and [SZ](https://github.com/szcompressor) team in the [Argonne National Laboratory](https://www.anl.gov), where I have collaborated with Dr. [Sheng Di](https://www.mcs.anl.gov/~shdi/), Dr. [Yanfei Guo](https://www.anl.gov/profile/yanfei-guo), Dr. [Rajeev Thakur](https://web.cels.anl.gov/~thakur/), and Dr. [Franck Cappello](https://www.anl.gov/profile/franck-cappello).
 
 I am the founder of [ZCCL.org](https://zccl.org), an initiative developed in collaboration with scientists at Argonne National Laboratory. [ZCCL.org](https://zccl.org) is dedicated to advancing both compression and communication and has introduced the first compression-accelerated collective communications library--[ZCCL](https://github.com/ZCCLorg/zccl.git), enabling direct communication and computation with compressed data. You can explore my publications [here](https://scholar.google.com/citations?user=lv5EK6AAAAAJ&hl). Feel free to reach out to me at jhuan380(at)ucr.edu.
 
@@ -78,18 +78,18 @@ Click [here](https://jiajunhuang1999.github.io/markdown/) for more details befor
 
 ### Educational Background
 
-* [<mark>University of California, Riverside</mark>](https://www.ucr.edu)  
-2022.01-2025.06  
+* [University of California, Riverside](https://www.ucr.edu)  
+2022-2025
 Ph.D. in Computer Science  
 Dean's Distinguished Fellowship
 
-* [<mark>University of Glasgow, UK</mark>](https://www.gla.ac.uk)  
-2017.09-2021.07  
+* [University of Glasgow, UK](https://www.gla.ac.uk)  
+2017-2021 
 BEng (Hons) Electronics and Electrical Engineering with Information Engineering  
 Graduated with Honors of the First Class  
 
-* [<mark>UESTC (University of Electronic Science and Technology of China), China</mark>](https://en.uestc.edu.cn)   
-2017.09-2021.07    
+* [UESTC (University of Electronic Science and Technology of China), China](https://en.uestc.edu.cn)   
+2017-2021    
 Bachelor of Engineering in Electronic Information Engineering  
 
 <h3>Selected Awards</h3>
