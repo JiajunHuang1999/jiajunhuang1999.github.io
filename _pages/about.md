@@ -1,13 +1,12 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-## Academic Profile
 Hi, my name is **Jiajun Huang (黄嘉俊)**. I am currently a CS Ph.D. candidate at the [<mark>University of California, Riverside</mark>](https://www.ucr.edu) supervised by Dr. [Zizhong Chen](https://www.cs.ucr.edu/~chen/superlab/people.html), and I will be graduating in June 2025. I have also been a long-term research intern at the [<mark>MPICH</mark>](https://www.mpich.org) team and [<mark>SZ</mark>](https://github.com/szcompressor) team in the [<mark>Argonne National Laboratory</mark>](https://www.anl.gov), where I have collaborated with Dr. [Sheng Di](https://www.mcs.anl.gov/~shdi/), Dr. [Yanfei Guo](https://www.anl.gov/profile/yanfei-guo), Dr. [Rajeev Thakur](https://web.cels.anl.gov/~thakur/), and Dr. [Franck Cappello](https://www.anl.gov/profile/franck-cappello).
 
 I am the founder of [ZCCL.org](https://zccl.org), an initiative developed in collaboration with scientists at Argonne National Laboratory. [ZCCL.org](https://zccl.org) is dedicated to advancing both compression and communication and has introduced the first compression-accelerated collective communications library--[ZCCL](https://github.com/ZCCLorg/zccl.git), enabling direct communication and computation with compressed data. You can explore my publications [<mark>here</mark>](https://scholar.google.com/citations?user=lv5EK6AAAAAJ&hl). Feel free to reach out to me at jhuan380(at)ucr.edu.
