@@ -5,6 +5,8 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+  - /profile/
+  - /profile.html
 ---
 
 Hi, my name is **Jiajun Huang (黄嘉俊)**. I am currently a CS Ph.D. candidate at the [<mark>University of California, Riverside</mark>](https://www.ucr.edu) supervised by Dr. [Zizhong Chen](https://www.cs.ucr.edu/~chen/superlab/people.html), and I will be graduating in June 2025. I have also been a long-term research intern at the [<mark>MPICH</mark>](https://www.mpich.org) team and [<mark>SZ</mark>](https://github.com/szcompressor) team in the [<mark>Argonne National Laboratory</mark>](https://www.anl.gov), where I have collaborated with Dr. [Sheng Di](https://www.mcs.anl.gov/~shdi/), Dr. [Yanfei Guo](https://www.anl.gov/profile/yanfei-guo), Dr. [Rajeev Thakur](https://web.cels.anl.gov/~thakur/), and Dr. [Franck Cappello](https://www.anl.gov/profile/franck-cappello).
