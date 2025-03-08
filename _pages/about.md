@@ -14,6 +14,9 @@ I am the founder of [ZCCL.org](https://zccl.org), an initiative developed in col
 <h3>News</h3>
 <div style="height: 200px; overflow: auto;">
 <ul>
+  <li>
+		[3/2025] Benjamin De Jong has been selected as an Elmhurst Jans Fellow and will be joining our group as a summer intern at Argonne National Laboratory. Congratulations, Benjamin!
+	</li>
 	<li>
 		[2/2025] I have won the Dissertation Completion Fellowship Award from the University of California, Riverside. This recognition identifies me as one of the top Ph.D. graduates in my program and university.
 	</li>
@@ -59,7 +62,7 @@ I am the founder of [ZCCL.org](https://zccl.org), an initiative developed in col
 </ul>
 </div>
 
-### Research interests
+### Research Interests
 - High Performance Computing and Communication
 - High Performance Deep Learning
 - Distributed and Parallel Computing/System
@@ -81,7 +84,6 @@ Graduated with Honors of the First Class
 2017.09-2021.07    
 Bachelor of Engineering in Electronic Information Engineering  
 
-### Selected Awards
 <h3>Selected Awards</h3>
 <div style="height: 200px; overflow: auto;">
 <ul>
@@ -123,6 +125,10 @@ Bachelor of Engineering in Electronic Information Engineering
 </li>
 </ul>
 </div>
+
+### Students
+
+Benjamin De Jong (Elmhurst Jans Fellow & Summer Intern from Argonne National Laboratory)
 
 <h3>Talks & Presentations</h3>
 <div style="height: 200px; overflow: auto;">
