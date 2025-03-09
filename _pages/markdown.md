@@ -24,7 +24,7 @@ The University of South Florida (USF) is one of the top three flagship public re
 
 ### What You Will Gain
 * Access to top-tier computing resources, including thousands of A100 GPUs and world-leading supercomputers like Frontier (2nd in the world) and Aurora (3rd in the world)
-* Expert research mentorship: Dr. Huang published three first-author papers in top HPC conferences within a year, while all top HPC conferences (SC, ICS, IPDPS) combined accept only ~200 papers annually
+* Expert research mentorship: Jiajun published three first-author papers in top HPC conferences within a year, while all top HPC conferences (SC, ICS, HPDC, IPDPS) combined accept only ~200 papers annually
 * Full financial support: All admitted Ph.D. students receive a full scholarship covering tuition, stipend, and health insurance
 * Great research equipment: Each student will be provided with a latest-generation MacBook or a high-performance PC for research
 * Exclusive internship & collaboration opportunities: Work with U.S. national labs and leading tech companies, gaining top-tier academic and industry experience
