@@ -31,7 +31,7 @@ The University of South Florida (USF) is one of the top three flagship public re
 
 ### Admission Requirements
 * Minimum Requirements
-    * Open to students from any academic background (no specific undergraduate major required)
+    * Background in Computer Science, Electrical Engineering, Mathematics, Physics, or related fields (Outstanding applicants from other disciplines will be considered on a case-by-case basis)
     * No GRE requirement
     * No prior research experience required, but strong enthusiasm for computing research & logical problem-solving skills are expected
     * Persistence and a strong interest in pursuing a Ph.D.
