@@ -141,7 +141,22 @@ Bachelor of Engineering in Electronic Information Engineering
 <div style="height: 200px; overflow: auto;">
 <ul>
 	<li>
-		[6/2024] Accelerating Collective Communication with Error-Bounded Lossy Compression, Invited talk, RIKEN Center for Computational Science (R-CCS), Tokyo, Japan
+		[2/2025] Advancing Exascale Collective Communications with Co-Designed Compression, Research Seminar, University of South Florida, Tampa, Florida, USA
+	</li>
+	<li>
+		[1/2025] Advancing Exascale Collective Communications with Co-Designed Compression, Research Seminar, The University of Alabama, Tuscaloosa, Alabama, USA
+	</li>
+	<li>
+		[9/2024] Accelerating Collective Communication with Error-Bounded Lossy Compression, Research Seminar, Tokyo Institute of Technology, Tokyo, Japan
+	</li>
+	<li>
+		[9/2024] FT K-means: A High-Performance K-means on GPU with Fault Tolerance, Papaer presentation, Cluster '24, Kobe, Japan
+	</li>
+	<li>
+		[9/2024] Codesigning Compression with Communication, Invited talk, FZ Workshop, The Ohio State University, Columbus, Ohio, USA
+	</li>
+	<li>
+		[6/2024] Accelerating Collective Communication with Error-Bounded Lossy Compression, Research Seminar, RIKEN Center for Computational Science (R-CCS), Tokyo, Japan
 	</li>
 	<li>
 		[6/2024] Accelerating Collective Communication with Error-Bounded Lossy Compression, Invited talk, CASS Community MPICH BoF, Online
