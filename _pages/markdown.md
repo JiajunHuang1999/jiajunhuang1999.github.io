@@ -41,6 +41,7 @@ The University of South Florida (USF) is one of the top three flagship public re
 
 ### Application Process
 Flexible Start Dates: Fall 2025 / Spring 2026 / Fall 2026
+
 How to Apply:
 1. Email Subject: PhD Application [Spring/Fall] [2025/2026] [Your Name]
 2. Email Content:
