@@ -50,6 +50,7 @@ How to Apply:
     * Additional materials (optional, e.g., TOEFL/GRE scores, if available)
 3. Combine all documents into a single PDF
 4. Send your application to jhuan380@ucr.edu
-Early applications are highly encouraged! Apply as soon as possible to secure your spot!
+
+**Early applications are highly encouraged! Apply as soon as possible to secure your spot!**
 
 ### Join us in conducting world-class research in HPC & AI! 
