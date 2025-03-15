@@ -95,7 +95,7 @@ Bachelor of Engineering in Electronic Information Engineering
 <h3>Selected Awards</h3>
 <div style="height: 200px; overflow: auto;">
 <ul>
-	<li>
+  <li>
   First Place Award at ACM Student Research Competition (Graduate) in SC23 
   </li>
   <li>
@@ -141,6 +141,9 @@ Bachelor of Engineering in Electronic Information Engineering
 <div style="height: 200px; overflow: auto;">
 <ul>
 	<li>
+		[3/2025] Advancing Exascale Collective Communications with Co-Designed Compression, Invited talk, FZ+ZF Workshop, Sarasota, Florida, USA
+	</li>
+	<li>
 		[2/2025] Advancing Exascale Collective Communications with Co-Designed Compression, Research Seminar, University of South Florida, Tampa, Florida, USA
 	</li>
 	<li>
@@ -181,7 +184,7 @@ Bachelor of Engineering in Electronic Information Engineering
 
 ### Academic Services
 - Session Chair: CLUSTER '24
-- Reviewers & Subreviewers: IEEE’s Transactions on Computers, CLUSTER '23, IPDPS '23, IPDPS '24, CCGRID '24, HiPC '24
+- Reviewers & Subreviewers: IEEE Transactions on Computers, Parallel Computing, IPDPS '24, CCGRID '24 '25, ICDCS '25, GPGPU '25
 - Student Volunteers: SC '21, SC '22
 
 ### Personal Interests
