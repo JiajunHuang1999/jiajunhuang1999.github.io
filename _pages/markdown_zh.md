@@ -1,12 +1,3 @@
----
-permalink: /markdown/
-title: "Fully-Funded Ph.D. Positions in Computer Science at USF: HPC & AI"
-author_profile: true
-redirect_from: 
-  - /md/
-  - /markdown.html
----
-
 ## 南佛罗里达大学 (USF) 计算机全奖博士招生 | HPC 高性能计算 & AI 人工智能
 
 ### 导师介绍
