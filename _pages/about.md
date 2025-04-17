@@ -29,7 +29,7 @@ I am actively recruiting 3–4 highly motivated Ph.D. students with full scholar
 		[4/2025] We have two papers accepted to ICS '25 and one paper accepted to HPDC '25. Congratulations to all my collaborators and students on this exciting achievement!
 	</li>
 	<li>
-		[4/2025] Our paper, <em>GlobaZip: An Interactive, Efficient Distributed Compression-as-a-Service Platform with Optimized Data Compression Techniques</em>, has been accepted by <em>IEEE Transactions on Parallel and Distributed Systems (TPDS)</em>.
+		[4/2025] Our paper, <em>GlobaZip: An Interactive, Efficient Distributed Compression-as-a-Service Platform with Optimized Data Compression Techniques</em>, has been accepted by IEEE Transactions on Parallel and Distributed Systems (TPDS).
 	</li>
   	<li>
 		[3/2025] Benjamin De Jong has been selected as an Elmhurst Jans Fellow and will be joining our group as a summer intern at Argonne National Laboratory. Congratulations, Benjamin!
