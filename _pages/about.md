@@ -22,7 +22,13 @@ I am actively recruiting 3–4 highly motivated Ph.D. students with full scholar
 <h3>News</h3>
 <div style="height: 200px; overflow: auto;">
 <ul>
-  <li>
+	<li>
+    [4/2025] Our HPDC '25 paper, <em>IPComp: Interpolation-Based Progressive Lossy Compression for Scientific Applications</em>, has been nominated as one of the three Best Paper candidates!
+	</li>
+	<li>
+    [4/2025] We have two papers accepted to ICS '25 and one paper accepted to HPDC '25. Congratulations to all my collaborators and students on this great achievement!
+	</li>
+  	<li>
 		[3/2025] Benjamin De Jong has been selected as an Elmhurst Jans Fellow and will be joining our group as a summer intern at Argonne National Laboratory. Congratulations, Benjamin!
 	</li>
 	<li>
