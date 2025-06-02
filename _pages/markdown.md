@@ -14,7 +14,7 @@ He has published over ten papers in **top-tier** computer systems conferences su
 ### About USF & Tampa
 The University of South Florida (USF) is one of the top three flagship public research universities in Florida, located in Tampa, FL. It holds R1 Carnegie Classification for highest research activity and was invited to join the Association of American Universities (AAU) in 2023, making it one of only 71 top research universities in the U.S. and Canada.
 * Rankings & Research Excellence
-    * Ranked #45 among U.S. public universities (fastest-growing in the last decade)
+    * Ranked #20 and #45 among U.S. public universities by Niche and U.S. News, respectively, making it one of the fastest-rising institutions over the past decade
     * Top 50 in research expenditures (NSF ranking), second only to the University of Florida in Florida
     * Rapid expansion in computing: In Fall 2025, the Department of Computer Science will be upgraded to the College of AI, Cybersecurity, and Computing, with major investments in HPC and AI research
 * Lifestyle & Job Opportunities
