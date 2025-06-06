@@ -89,28 +89,28 @@ I am actively recruiting 3–4 highly motivated Ph.D. students with full scholar
 
 ### Educational Background
 
-* [University of California, Riverside](https://www.ucr.edu), 2022-2025 
+* [University of California, Riverside](https://www.ucr.edu), 2022-2025
 Ph.D. in Computer Science  
 Dean's Distinguished Fellowship
 
-* [University of Glasgow, UK](https://www.gla.ac.uk), 2017-2021 
+* [University of Glasgow, UK](https://www.gla.ac.uk), 2017-2021
 BEng (Hons) Electronics and Electrical Engineering with Information Engineering  
 Graduated with Honors of the First Class  
 
-* [UESTC (University of Electronic Science and Technology of China), China](https://en.uestc.edu.cn), 2017-2021     
+* [UESTC (University of Electronic Science and Technology of China), China](https://en.uestc.edu.cn), 2017-2021
 Bachelor of Engineering in Electronic Information Engineering  
 
 ### Research Experience
 
 * Assistant Professor, Bellini College of Artificial Intelligence, Cybersecurity and Computing, [University of South Florida](https://www.usf.edu/ai-cybersecurity-computing/), 2025-Now  
 
-* Visiting Student - Graduate, [MPICH](https://www.mpich.org) team, [Argonne National Laboratory](https://www.anl.gov), 2022-2025 
+* Visiting Student - Graduate, [MPICH](https://www.mpich.org) team, [Argonne National Laboratory](https://www.anl.gov), 2022-2025
 Mentors: Dr. [Rajeev Thakur](https://web.cels.anl.gov/~thakur/), Dr. [Yanfei Guo](https://www.anl.gov/profile/yanfei-guo) 
 
-* Visiting Student - Graduate, [SZ](https://github.com/szcompressor) team, [Argonne National Laboratory](https://www.anl.gov), 2022-2025 
+* Visiting Student - Graduate, [SZ](https://github.com/szcompressor) team, [Argonne National Laboratory](https://www.anl.gov), 2022-2025
 Mentors: Dr. [Franck Cappello](https://www.anl.gov/profile/franck-cappello), Dr. [Sheng Di](https://www.mcs.anl.gov/~shdi/) 
 
-* Graduate Student Researcher, SuperLab, [University of California, Riverside](https://www.ucr.edu), 2022-2025  
+* Graduate Student Researcher, SuperLab, [University of California, Riverside](https://www.ucr.edu), 2022-2025
 Advisor: Dr. [Zizhong Chen](https://www.cs.ucr.edu/~chen/superlab/people.html)  
 
 
