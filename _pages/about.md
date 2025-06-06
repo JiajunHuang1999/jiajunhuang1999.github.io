@@ -9,9 +9,9 @@ redirect_from:
   - /profile.html
 ---
 
-Hi, my name is **Jiajun Huang (黄嘉俊)**. I will be joining the **University of South Florida (USF)** as an **Assistant Professor** in **Fall 2025**, and I am currently **[hiring multiple Ph.D. students](https://jiajunhuang1999.github.io/markdown/)**. I lead the **High <u>P</u>erformance & <u>I</u>ntelligence Lab** (**Pi Lab** or **π Lab**), where we focus on building high-performance systems for large-scale artificial intelligence and scientific applications.
+Hi, my name is **Jiajun Huang (黄嘉俊)**. I will be joining the University of South Florida (USF) as an Assistant Professor in Fall 2025, and I am currently **[hiring multiple Ph.D. students](https://jiajunhuang1999.github.io/markdown/)**. I lead the **High <u>P</u>erformance & <u>I</u>ntelligence Lab** (**Pi Lab** or **π Lab**), where we focus on building high-performance systems for large-scale artificial intelligence and scientific applications.
 
-I am the founder of [ZCCL.org](https://zccl.org), an initiative developed in collaboration with scientists at Argonne National Laboratory. [ZCCL.org](https://zccl.org) is dedicated to advancing both compression and communication and has introduced the first compression-accelerated collective communications library--[ZCCL](https://github.com/ZCCLorg/zccl.git), enabling direct communication and computation with compressed data. You can explore my publications [here](https://scholar.google.com/citations?user=lv5EK6AAAAAJ&hl). Feel free to reach out to me at jiajunhuang(at)usf.edu.
+I am the founder of **[ZCCL.org](https://zccl.org)**, an initiative developed in collaboration with scientists at Argonne National Laboratory. [ZCCL.org](https://zccl.org) is dedicated to advancing both compression and communication and has introduced the first compression-accelerated collective communications library--[ZCCL](https://github.com/ZCCLorg/zccl.git), enabling direct communication and computation with compressed data. You can explore my publications [here](https://scholar.google.com/citations?user=lv5EK6AAAAAJ&hl). Feel free to reach out to me at jiajunhuang(at)usf.edu.
 
 <!-- Hi, my name is **Jiajun Huang (黄嘉俊)**. I will be joining the University of South Florida (USF) as an Assistant Professor in Fall 2025 and am [hiring multiple Ph.D. students](https://jiajunhuang1999.github.io/markdown/). I lead the High Performance & Intelligence Lab (Pi or \Pi) I graduated with a CS Ph.D. from the [University of California, Riverside](https://www.ucr.edu) supervised by Dr. [Zizhong Chen](https://www.cs.ucr.edu/~chen/superlab/people.html). I have also been a long-term research intern at the [MPICH](https://www.mpich.org) team and [SZ](https://github.com/szcompressor) team in the [Argonne National Laboratory](https://www.anl.gov), where I have collaborated with Dr. [Sheng Di](https://www.mcs.anl.gov/~shdi/), Dr. [Yanfei Guo](https://www.anl.gov/profile/yanfei-guo), Dr. [Rajeev Thakur](https://web.cels.anl.gov/~thakur/), and Dr. [Franck Cappello](https://www.anl.gov/profile/franck-cappello). -->
 
@@ -104,11 +104,10 @@ Bachelor of Engineering in Electronic Information Engineering
 
 * Assistant Professor, Bellini College of Artificial Intelligence, Cybersecurity and Computing, [University of South Florida](https://www.usf.edu/ai-cybersecurity-computing/), 2025-Now  
 
-
-* Visiting Student - Graduate, [MPICH](https://www.mpich.org) team, [Argonne National Laboratory](https://www.anl.gov), 2022-2025
+* Visiting Student - Graduate, [MPICH](https://www.mpich.org) team, [Argonne National Laboratory](https://www.anl.gov), 2022-2025 
 Mentors: Dr. [Rajeev Thakur](https://web.cels.anl.gov/~thakur/), Dr. [Yanfei Guo](https://www.anl.gov/profile/yanfei-guo) 
 
-* Visiting Student - Graduate, [SZ](https://github.com/szcompressor) team, [Argonne National Laboratory](https://www.anl.gov), 2022-2025
+* Visiting Student - Graduate, [SZ](https://github.com/szcompressor) team, [Argonne National Laboratory](https://www.anl.gov), 2022-2025 
 Mentors: Dr. [Franck Cappello](https://www.anl.gov/profile/franck-cappello), Dr. [Sheng Di](https://www.mcs.anl.gov/~shdi/) 
 
 * Graduate Student Researcher, SuperLab, [University of California, Riverside](https://www.ucr.edu), 2022-2025  
