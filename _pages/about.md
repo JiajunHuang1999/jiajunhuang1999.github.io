@@ -97,7 +97,7 @@ Dean's Distinguished Fellowship
 BEng (Hons) Electronics and Electrical Engineering with Information Engineering    
 Graduated with Honors of the First Class  
 
-* [UESTC (University of Electronic Science and Technology of China), China](https://en.uestc.edu.cn), 2017-2021  
+* [UESTC (University of Electronic Science and Technology of China), China](https://en.uestc.edu.cn), 2017-2021    
 Bachelor of Engineering in Electronic Information Engineering  
 
 ### Research Experience
