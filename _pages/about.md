@@ -17,9 +17,9 @@ I am the founder of **[ZCCL.org](https://zccl.org)**, an initiative developed in
 
 ### <span style="color: rgb(52, 152, 219);">Job Opportunities</span>
 
-I am actively recruiting 3–4 highly motivated Ph.D. students with full scholarships to join my research group. Areas of focus include high-performance computing and communication, high-performance deep learning, parallel & distributed computing, and big data management & analytics.
+I am actively recruiting 2–3 highly motivated Ph.D. students with full scholarships to join my research group. Areas of focus include high-performance computing and communication, high-performance deep learning, parallel & distributed computing, and big data management & analytics.
 
-<!-- [Click here for more details before reaching out via email.](https://jiajunhuang1999.github.io/markdown/) -->
+[Click here for more details before reaching out via email.](https://jiajunhuang1999.github.io/markdown/)
 
 <h3>News</h3>
 <div style="height: 200px; overflow: auto;">

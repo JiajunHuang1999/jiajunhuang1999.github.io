@@ -8,7 +8,7 @@ redirect_from:
 --- -->
 
 ### About the Advisor
-Jiajun Huang will join the College of AI, Cybersecurity, and Computing at the University of South Florida (USF) as an Assistant Professor in Fall 2025 and is recruiting **3-4 Ph.D. students** for Fall 2025, Spring 2026, or Fall 2026. Jiajun earned his Bachelor's degree from the University of Electronic Science and Technology of China (UESTC) and the University of Glasgow (First-Class Honors) in 2021 and will receive his Ph.D. in Computer Science from the University of California, Riverside (2022-2025). His research interests span **high-performance computing and communication**, **high-performance deep learning**, **parallel & distributed computing**, and **big data management & analytics**.
+Jiajun Huang will join the College of AI, Cybersecurity, and Computing at the University of South Florida (USF) as an Assistant Professor in Fall 2025 and is recruiting **2-3 Ph.D. students** for Spring 2026 and Fall 2026. Jiajun earned his Bachelor's degree from the University of Electronic Science and Technology of China (UESTC) and the University of Glasgow (First-Class Honors) in 2021 and will receive his Ph.D. in Computer Science from the University of California, Riverside (2022-2025). His research interests span **high-performance computing and communication**, **high-performance deep learning**, **parallel & distributed computing**, and **big data management & analytics**.
 He has published over ten papers in **top-tier** computer systems conferences such as **SC**, **ICS**, **IPDPS**, and **SIGMOD**, and won the **First Place Award** in the ACM Student Research Competition at SC'23. He actively collaborates with **U.S. national laboratories**, and admitted students will have access to some of the world's most advanced supercomputers, including **Frontier (world's 2nd fastest)**, **Aurora (world's 3rd fastest)**, and **NVIDIA supercomputers**. Exceptional students will also have the opportunity to intern at national labs during the summer, working alongside leading scientists on cutting-edge research.
 
 ### About USF & Tampa
@@ -40,17 +40,17 @@ The University of South Florida (USF) is one of the top three flagship public re
     * Prior research experience (e.g., publications, competitions, projects) or strong programming skills (CUDA, MPI, PyTorch, etc.)
 
 ### Application Process
-Flexible Start Dates: Fall 2025 / Spring 2026 / Fall 2026
+Flexible Start Dates: Spring 2026 / Fall 2026
 
 How to Apply:
-1. Email Subject: PhD Application [Spring/Fall] [2025/2026] [Your Name]
+1. Email Subject: PhD Application [Spring/Fall] [2026] [Your Name]
 2. Email Content:
     * Self-introduction (including research experience & interests)
     * Resume (CV)
     * Academic transcripts
     * Additional materials (optional, e.g., TOEFL/GRE scores, if available)
 3. Combine all documents into a single PDF
-4. Send your application to jhuan380@ucr.edu
+4. Send your application to jiajunhuang@usf.edu
 
 **Early applications are highly encouraged! Apply as soon as possible to secure your spot!**
 
