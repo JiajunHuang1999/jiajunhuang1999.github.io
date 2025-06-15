@@ -157,7 +157,9 @@ Advisor: Dr. [Zizhong Chen](https://www.cs.ucr.edu/~chen/superlab/people.html)
 </div>
 
 ### Students
-- Benjamin De Jong (Elmhurst Jans Fellow & Summer Intern from Argonne National Laboratory)
+- Jiefeng Zhou – B.Sc., Yingcai Honors College, UESTC
+- Yiyi Wang – B.Eng., School of Computing, Wuhan University; M.Sc., University of Gothenburg
+- Benjamin De Jong - Elmhurst Jans Fellow & Summer Intern from Argonne National Laboratory
 
 <h3>Talks & Presentations</h3>
 <div style="height: 200px; overflow: auto;">
