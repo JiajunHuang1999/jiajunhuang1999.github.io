@@ -25,6 +25,12 @@ I am actively recruiting 2–3 highly motivated Ph.D. students with full scholar
 <div style="height: 200px; overflow: auto;">
 <ul>
 	<li>
+		[6/2025] MPICH has been awarded the <a href="https://awards.acm.org/software-system">2024 ACM Software System Award</a>! Huge congratulations to everyone!
+	</li>
+	<li>
+		[6/2025] Presented our paper "ghZCCL: Advancing GPU-aware Collective Communications with Homomorphic Compression" at <a href="https://hpcrl.github.io/ICS2025-webpage/program/program.html">ICS2025</a> in Salt Lake City, Utah.
+	</li>
+	<li>
 		[4/2025] Our HPDC '25 paper, <em>IPComp: Interpolation-Based Progressive Lossy Compression for Scientific Applications</em>, has been nominated as one of the three Best Paper candidates!
 	</li>
 	<li>
