@@ -214,7 +214,7 @@ Advisor: Dr. [Zizhong Chen](https://www.cs.ucr.edu/~chen/superlab/people.html)
 
 ### Academic Services
 - Session Chair: CLUSTER '24
-- Reviewers & Subreviewers: IEEE Transactions on Computers, IEEE Transactions on Parallel and Distributed Systems, Parallel Computing, IPDPS '24, CCGRID '24 '25, ICDCS '25, Cluster '25, GPGPU '25, DRBSD '25
+- Reviewers & Subreviewers: ACM Computing Surveys, IEEE Transactions on Computers, IEEE Transactions on Parallel and Distributed Systems, Parallel Computing, IPDPS '24, CCGRID '24 '25, ICDCS '25, Cluster '25, GPGPU '25, DRBSD '25
 - Student Volunteers: SC '21, SC '22
 
 ### Personal Interests
