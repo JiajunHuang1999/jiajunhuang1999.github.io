@@ -88,10 +88,11 @@ I am actively recruiting 2–3 highly motivated Ph.D. students with full scholar
 </div>
 
 ### Research Interests
-- High Performance Computing and Communication
-- High Performance Deep Learning
-- Distributed and Parallel Computing/System
-- Big Data Management and Analysis
+- High-Performance Computing and Communication
+- Machine Learning Systems
+- High-Performance Deep Learning
+- Distributed and Parallel Computing/Systems
+- Big Data Management and Reduction
 
 ### Educational Background
 
@@ -124,7 +125,10 @@ Advisor: Dr. [Zizhong Chen](https://www.cs.ucr.edu/~chen/superlab/people.html)
 <div style="height: 200px; overflow: auto;">
 <ul>
   <li>
-  First Place Award at ACM Student Research Competition (Graduate) in SC23 
+  First Place Award, ACM Student Research Competition, SC 2023
+  </li>
+  <li>
+  Best Paper Finalist, HPDC 2025 
   </li>
   <li>
   Dissertation Completion Fellowship Award, UC Riverside
@@ -133,7 +137,7 @@ Advisor: Dr. [Zizhong Chen](https://www.cs.ucr.edu/~chen/superlab/people.html)
   Dean's Distinguished Fellowship, UC Riverside
   </li>
   <li>
-  ACM SRC Travel Grant for SC23
+  ACM SRC Travel Grant for SC 2023
   </li>
   <li>
   NSF Student Travel grant for IEEE Cluster 2023 
