@@ -25,6 +25,9 @@ I am actively recruiting 2–3 highly motivated Ph.D. students with full scholar
 <div style="height: 200px; overflow: auto;">
 <ul>
 	<li>
+		[12/2025] Congratulations to Lingqi on his paper, "FRUGAL: Pushing GPU Applications Beyond Memory Limits", being officially accepted to the IEEE/ACM International Symposium on Code Generation and Optimization (CGO 2026)!
+	</li>
+	<li>
 		[6/2025] MPICH has been awarded the <a href="https://awards.acm.org/software-system">2024 ACM Software System Award</a>! Huge congratulations to everyone!
 	</li>
 	<li>
