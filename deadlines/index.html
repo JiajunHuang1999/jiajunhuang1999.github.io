@@ -1308,14 +1308,16 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   if (upc.length === 0) upcomingEl.innerHTML = '<p class="ddl-empty">No upcoming deadlines.</p>';
   if (pst.length === 0) pastEl.innerHTML     = '<p class="ddl-empty">No past deadlines.</p>';
 
-  // Stats — clickable to filter by bucket
+  // Stats — clickable to filter by bucket; default to "Upcoming"
   statsEl.innerHTML =
-    '<div class="ddl-stat" data-bucket="upcoming"><div class="n">' + upc.length + '</div><div class="l">Upcoming</div></div>' +
+    '<div class="ddl-stat active" data-bucket="upcoming"><div class="n">' + upc.length + '</div><div class="l">Upcoming</div></div>' +
     '<div class="ddl-stat" data-bucket="past"><div class="n">' + pst.length + '</div><div class="l">Past</div></div>' +
-    '<div class="ddl-stat active" data-bucket="all"><div class="n">' + data.length + '</div><div class="l">Tracked</div></div>';
+    '<div class="ddl-stat" data-bucket="all"><div class="n">' + data.length + '</div><div class="l">Tracked</div></div>';
 
   var upcomingTitle = document.querySelectorAll('.ddl-section-title')[0];
   var pastTitle     = document.querySelectorAll('.ddl-section-title')[1];
+  pastTitle.classList.add('hidden');
+  pastEl.classList.add('hidden');
   statsEl.querySelectorAll('.ddl-stat').forEach(function(s) {
     s.addEventListener('click', function() {
       var bucket = s.dataset.bucket;
