@@ -252,9 +252,10 @@
     --ddl-accent: #1a7ab8;
     --ddl-hpc: #e63946;
     --ddl-arch: #8e44ad;
-    --ddl-comp: #27ae60;
+    --ddl-pl: #27ae60;
     --ddl-sys: #0ea5e9;
     --ddl-net: #06b6d4;
+    --ddl-db:  #db2777;
   }
   .ddl-intro {
     font-size: 0.92em;
@@ -364,9 +365,10 @@
   }
   .ddl-card.cat-HPC          { --bar: var(--ddl-hpc); }
   .ddl-card.cat-Architecture { --bar: var(--ddl-arch); }
-  .ddl-card.cat-Compiler     { --bar: var(--ddl-comp); }
+  .ddl-card.cat-PL           { --bar: var(--ddl-pl); }
   .ddl-card.cat-Systems      { --bar: var(--ddl-sys); }
   .ddl-card.cat-Networks     { --bar: var(--ddl-net); }
+  .ddl-card.cat-Database     { --bar: var(--ddl-db); }
   .ddl-card.passed { opacity: 0.62; }
   .ddl-card.passed:hover { transform: none; box-shadow: none; }
 
@@ -447,9 +449,10 @@
   }
   .ddl-tag.cat-HPC          { background: var(--ddl-hpc); }
   .ddl-tag.cat-Architecture { background: var(--ddl-arch); }
-  .ddl-tag.cat-Compiler     { background: var(--ddl-comp); }
+  .ddl-tag.cat-PL           { background: var(--ddl-pl); }
   .ddl-tag.cat-Systems      { background: var(--ddl-sys); }
   .ddl-tag.cat-Networks     { background: var(--ddl-net); }
+  .ddl-tag.cat-Database     { background: var(--ddl-db); }
 
   .ddl-fullname {
     font-size: 0.78em;
@@ -492,6 +495,7 @@
   }
   .ddl-countdown.passed { background: #f3f4f6; color: var(--ddl-muted); }
   .ddl-countdown.tbd    { background: #fefce8; color: #854d0e; }
+  .ddl-countdown.rolling { background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%); color: #9d174d; }
 
   .ddl-rows { font-size: 0.82em; color: #374151; }
   .ddl-row { display: flex; justify-content: space-between; padding: 2px 0; gap: 10px; align-items: baseline; }
@@ -503,17 +507,17 @@
 </style>
 
 <p class="ddl-intro">
-A live tracker of paper submission deadlines for the conferences I follow across
+A live tracker of paper submission deadlines for the conferences I follow, covering
 <strong>HPC</strong> (SC, ICS, HPDC, PPoPP, IPDPS, ICPP),
 <strong>architecture</strong> (ASPLOS, ISCA, MICRO, HPCA),
 <strong>systems</strong> (SOSP, OSDI, EuroSys, FAST, ATC),
-<strong>networks</strong> (SIGCOMM, NSDI), and
-<strong>compilers</strong> (CGO).
-All times are <strong>AoE</strong> (Anywhere on Earth, UTC&minus;12); countdowns are in your local clock and tick live.
-Click a stat chip to jump between upcoming and past, or a category pill to narrow the view.
-Conferences tracked by <a href="https://csrankings.org/#/fromyear/2021/toyear/2026/index?arch&comm&sec&mod&hpc&mobile&metrics&ops&plan&soft&da&bed&us">CSRankings</a> are marked <span class="ddl-badge csr" style="cursor:default;">CSRankings</span>;
-<a href="https://ccf.atom.im">CCF</a> Class-A conferences are marked <span class="ddl-badge ccf" style="cursor:default;">CCF-A</span>.
-Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have deadlines inferred from the prior year's cadence &mdash; please verify against the official CFP before you rely on them.
+<strong>networks</strong> (SIGCOMM, NSDI),
+<strong>databases</strong> (SIGMOD, VLDB, ICDE), and
+<strong>programming languages</strong> (PLDI, POPL, CGO).
+All times are <strong>AoE</strong> (Anywhere on Earth, UTC&minus;12); countdowns use your local clock and tick live.
+Click a stat chip to switch between upcoming and past, and a category pill to narrow by area.
+Badges flag conferences tracked by <a href="https://csrankings.org/#/fromyear/2021/toyear/2026/index?arch&comm&sec&mod&hpc&mobile&metrics&ops&plan&soft&da&bed&us">CSRankings</a> (<span class="ddl-badge csr" style="cursor:default;">CSRankings</span>) and those on the <a href="https://ccf.atom.im">CCF</a> Class-A list (<span class="ddl-badge ccf" style="cursor:default;">CCF-A</span>).
+A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means the deadline is inferred from the prior year's cadence &mdash; double-check the official CFP before relying on it. VLDB uses PVLDB's rolling monthly submissions (1st of each month), so it shows "Rolling" instead of a countdown.
 </p>
 
 <div class="ddl-stats" id="ddl-stats"></div>
@@ -541,7 +545,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-11-20",
   "location":    "Chicago, IL, USA",
   "website":     "https://sc26.supercomputing.org/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -556,7 +561,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-10-01",
   "location":    "Singapore",
   "website":     "https://icpp2026.github.io/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -571,7 +577,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    null,
   "location":    "TBD",
   "website":     "https://icpp-conf.org/",
-  "estimated":   true
+  "estimated":   true,
+  "rolling":     null
 },
 
 {
@@ -586,7 +593,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2027-04-15",
   "location":    "Crete, Greece",
   "website":     "https://www.asplos-conference.org/asplos2027/cfp/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -601,7 +609,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2027-04-15",
   "location":    "Crete, Greece",
   "website":     "https://www.asplos-conference.org/asplos2027/cfp/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -616,7 +625,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-07-16",
   "location":    "Cleveland, OH, USA",
   "website":     "https://hpdc.sci.utah.edu/2026/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -631,7 +641,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-07-09",
   "location":    "Belfast, UK",
   "website":     "https://dipsa-qub.github.io/ICS2026-webpage/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -646,7 +657,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-07-09",
   "location":    "Belfast, UK",
   "website":     "https://dipsa-qub.github.io/ICS2026-webpage/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -661,7 +673,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-05-29",
   "location":    "New Orleans, LA, USA",
   "website":     "https://www.ipdps.org/ipdps2026/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -676,14 +689,15 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-02-04",
   "location":    "Sydney, Australia",
   "website":     "https://ppopp26.sigplan.org/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
   "acronym":     "CGO '26",
   "cycle":       "Round 2",
   "fullname":    "International Symposium on Code Generation and Optimization",
-  "category":    "Compiler",
+  "category":    "PL",
   "abstract":    null,
   "deadline":    "2025-09-11",
   "notification":"2025-11-03",
@@ -691,14 +705,15 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-02-04",
   "location":    "Sydney, Australia",
   "website":     "https://2026.cgo.org/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
   "acronym":     "CGO '26",
   "cycle":       "Round 1",
   "fullname":    "International Symposium on Code Generation and Optimization",
-  "category":    "Compiler",
+  "category":    "PL",
   "abstract":    null,
   "deadline":    "2025-05-29",
   "notification":"2025-07-21",
@@ -706,7 +721,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-02-04",
   "location":    "Sydney, Australia",
   "website":     "https://2026.cgo.org/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -721,14 +737,15 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    null,
   "location":    "TBD",
   "website":     "https://www.ppopp.org/",
-  "estimated":   true
+  "estimated":   true,
+  "rolling":     null
 },
 
 {
   "acronym":     "CGO '27",
   "cycle":       "Round 2",
   "fullname":    "International Symposium on Code Generation and Optimization",
-  "category":    "Compiler",
+  "category":    "PL",
   "abstract":    null,
   "deadline":    "2026-09-10",
   "notification":"2026-11-02",
@@ -736,14 +753,15 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    null,
   "location":    "TBD (co-located with PPoPP)",
   "website":     "https://conf.researchr.org/series/cgo",
-  "estimated":   true
+  "estimated":   true,
+  "rolling":     null
 },
 
 {
   "acronym":     "CGO '27",
   "cycle":       "Round 1",
   "fullname":    "International Symposium on Code Generation and Optimization",
-  "category":    "Compiler",
+  "category":    "PL",
   "abstract":    null,
   "deadline":    "2026-05-28",
   "notification":"2026-07-20",
@@ -751,7 +769,56 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    null,
   "location":    "TBD (co-located with PPoPP)",
   "website":     "https://conf.researchr.org/series/cgo",
-  "estimated":   true
+  "estimated":   true,
+  "rolling":     null
+},
+
+{
+  "acronym":     "PLDI '26",
+  "cycle":       null,
+  "fullname":    "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+  "category":    "PL",
+  "abstract":    null,
+  "deadline":    "2025-11-13",
+  "notification":"2026-03-05",
+  "conf_start":  "2026-06-15",
+  "conf_end":    "2026-06-19",
+  "location":    "Boulder, CO, USA",
+  "website":     "https://pldi26.sigplan.org/",
+  "estimated":   null,
+  "rolling":     null
+},
+
+{
+  "acronym":     "PLDI '27",
+  "cycle":       null,
+  "fullname":    "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+  "category":    "PL",
+  "abstract":    null,
+  "deadline":    "2026-11-12",
+  "notification":null,
+  "conf_start":  null,
+  "conf_end":    null,
+  "location":    "TBD",
+  "website":     "https://conf.researchr.org/series/pldi",
+  "estimated":   true,
+  "rolling":     null
+},
+
+{
+  "acronym":     "POPL '27",
+  "cycle":       null,
+  "fullname":    "ACM SIGPLAN Symposium on Principles of Programming Languages",
+  "category":    "PL",
+  "abstract":    null,
+  "deadline":    "2026-07-09",
+  "notification":"2026-10-05",
+  "conf_start":  "2027-01-10",
+  "conf_end":    "2027-01-16",
+  "location":    "Mexico City, Mexico",
+  "website":     "https://popl27.sigplan.org/",
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -766,7 +833,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    null,
   "location":    "TBD",
   "website":     "https://www.ipdps.org/",
-  "estimated":   true
+  "estimated":   true,
+  "rolling":     null
 },
 
 {
@@ -781,7 +849,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    null,
   "location":    "TBD",
   "website":     "https://www.ics-conference.org/",
-  "estimated":   true
+  "estimated":   true,
+  "rolling":     null
 },
 
 {
@@ -796,7 +865,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    null,
   "location":    "TBD",
   "website":     "https://www.ics-conference.org/",
-  "estimated":   true
+  "estimated":   true,
+  "rolling":     null
 },
 
 {
@@ -811,7 +881,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    null,
   "location":    "TBD",
   "website":     "https://www.hpdc.org/",
-  "estimated":   true
+  "estimated":   true,
+  "rolling":     null
 },
 
 {
@@ -826,7 +897,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2027-11-19",
   "location":    "TBD",
   "website":     "https://supercomputing.org/",
-  "estimated":   true
+  "estimated":   true,
+  "rolling":     null
 },
 
 {
@@ -841,7 +913,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-11-04",
   "location":    "Athens, Greece",
   "website":     "https://www.microarch.org/micro59/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -856,7 +929,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-07-01",
   "location":    "Raleigh, NC, USA",
   "website":     "https://iscaconf.org/isca2026/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -871,7 +945,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-02-04",
   "location":    "Sydney, Australia",
   "website":     "https://hpca-conf.org/2026/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -886,7 +961,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    null,
   "location":    "TBD",
   "website":     "https://hpca-conf.org/",
-  "estimated":   true
+  "estimated":   true,
+  "rolling":     null
 },
 
 {
@@ -901,7 +977,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-10-02",
   "location":    "Prague, Czechia",
   "website":     "https://sigops.org/s/conferences/sosp/2026/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -916,7 +993,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-07-15",
   "location":    "Seattle, WA, USA",
   "website":     "https://www.usenix.org/conference/osdi26",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -931,7 +1009,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-04-30",
   "location":    "Edinburgh, UK",
   "website":     "https://2026.eurosys.org/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -946,7 +1025,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-04-30",
   "location":    "Edinburgh, UK",
   "website":     "https://2026.eurosys.org/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -961,7 +1041,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2027-04-24",
   "location":    "Rabat, Morocco",
   "website":     "https://2027.eurosys.org/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -976,7 +1057,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2027-04-24",
   "location":    "Rabat, Morocco",
   "website":     "https://2027.eurosys.org/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -991,7 +1073,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    null,
   "location":    "TBD",
   "website":     "https://www.sosp.org/",
-  "estimated":   true
+  "estimated":   true,
+  "rolling":     null
 },
 
 {
@@ -1006,7 +1089,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    null,
   "location":    "TBD",
   "website":     "https://www.usenix.org/conferences",
-  "estimated":   true
+  "estimated":   true,
+  "rolling":     null
 },
 
 {
@@ -1021,7 +1105,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-11-18",
   "location":    "Hong Kong, China",
   "website":     "https://sigops.org/s/conferences/atc/2026/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -1036,7 +1121,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    null,
   "location":    "TBD",
   "website":     "https://sigops.org/s/conferences/atc/",
-  "estimated":   true
+  "estimated":   true,
+  "rolling":     null
 },
 
 {
@@ -1051,7 +1137,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2027-02-25",
   "location":    "Renton, WA, USA",
   "website":     "https://www.usenix.org/conference/fast27",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -1066,7 +1153,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-02-26",
   "location":    "Santa Clara, CA, USA",
   "website":     "https://www.usenix.org/conference/fast26",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -1081,7 +1169,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-02-26",
   "location":    "Santa Clara, CA, USA",
   "website":     "https://www.usenix.org/conference/fast26",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -1096,7 +1185,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-08-21",
   "location":    "Denver, CO, USA",
   "website":     "https://conferences.sigcomm.org/sigcomm/2026/",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -1111,7 +1201,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-05-06",
   "location":    "Renton, WA, USA",
   "website":     "https://www.usenix.org/conference/nsdi26",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -1126,7 +1217,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    "2026-05-06",
   "location":    "Renton, WA, USA",
   "website":     "https://www.usenix.org/conference/nsdi26",
-  "estimated":   null
+  "estimated":   null,
+  "rolling":     null
 },
 
 {
@@ -1141,7 +1233,152 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   "conf_end":    null,
   "location":    "TBD",
   "website":     "https://www.usenix.org/conference/nsdi27",
-  "estimated":   true
+  "estimated":   true,
+  "rolling":     null
+},
+
+{
+  "acronym":     "SIGMOD '26",
+  "cycle":       "Round 4",
+  "fullname":    "ACM SIGMOD International Conference on Management of Data",
+  "category":    "Database",
+  "abstract":    "2025-10-10",
+  "deadline":    "2025-10-17",
+  "notification":"2026-02-23",
+  "conf_start":  "2026-05-31",
+  "conf_end":    "2026-06-05",
+  "location":    "Bengaluru, India",
+  "website":     "https://2026.sigmod.org/",
+  "estimated":   null,
+  "rolling":     null
+},
+
+{
+  "acronym":     "SIGMOD '27",
+  "cycle":       "Round 3",
+  "fullname":    "ACM SIGMOD International Conference on Management of Data (rolling quarterly rounds on the 17th)",
+  "category":    "Database",
+  "abstract":    "2026-07-10",
+  "deadline":    "2026-07-17",
+  "notification":"2026-11-23",
+  "conf_start":  null,
+  "conf_end":    null,
+  "location":    "TBD",
+  "website":     "https://sigmod.org/",
+  "estimated":   true,
+  "rolling":     null
+},
+
+{
+  "acronym":     "SIGMOD '27",
+  "cycle":       "Round 4",
+  "fullname":    "ACM SIGMOD International Conference on Management of Data (rolling quarterly rounds on the 17th)",
+  "category":    "Database",
+  "abstract":    "2026-10-10",
+  "deadline":    "2026-10-17",
+  "notification":"2027-02-23",
+  "conf_start":  null,
+  "conf_end":    null,
+  "location":    "TBD",
+  "website":     "https://sigmod.org/",
+  "estimated":   true,
+  "rolling":     null
+},
+
+{
+  "acronym":     "VLDB '26",
+  "cycle":       null,
+  "fullname":    "International Conference on Very Large Data Bases (via PVLDB; Vol 19 cut-off 15 Jun 2026)",
+  "category":    "Database",
+  "abstract":    null,
+  "deadline":    null,
+  "notification":null,
+  "conf_start":  "2026-08-31",
+  "conf_end":    "2026-09-04",
+  "location":    "Boston, MA, USA",
+  "website":     "https://vldb.org/2026/",
+  "estimated":   null,
+  "rolling":     true
+},
+
+{
+  "acronym":     "VLDB '27",
+  "cycle":       null,
+  "fullname":    "International Conference on Very Large Data Bases (via PVLDB)",
+  "category":    "Database",
+  "abstract":    null,
+  "deadline":    null,
+  "notification":null,
+  "conf_start":  null,
+  "conf_end":    null,
+  "location":    "TBD",
+  "website":     "https://vldb.org/",
+  "estimated":   null,
+  "rolling":     true
+},
+
+{
+  "acronym":     "ICDE '26",
+  "cycle":       "Round 2",
+  "fullname":    "IEEE International Conference on Data Engineering",
+  "category":    "Database",
+  "abstract":    null,
+  "deadline":    "2025-10-27",
+  "notification":"2026-02-23",
+  "conf_start":  "2026-05-04",
+  "conf_end":    "2026-05-08",
+  "location":    "Montréal, Canada",
+  "website":     "https://icde2026.github.io/",
+  "estimated":   null,
+  "rolling":     null
+},
+
+{
+  "acronym":     "ICDE '26",
+  "cycle":       "Round 1",
+  "fullname":    "IEEE International Conference on Data Engineering",
+  "category":    "Database",
+  "abstract":    null,
+  "deadline":    "2025-06-18",
+  "notification":"2025-10-20",
+  "conf_start":  "2026-05-04",
+  "conf_end":    "2026-05-08",
+  "location":    "Montréal, Canada",
+  "website":     "https://icde2026.github.io/",
+  "estimated":   null,
+  "rolling":     null
+},
+
+{
+  "acronym":     "ICDE '27",
+  "cycle":       "Round 1",
+  "fullname":    "IEEE International Conference on Data Engineering",
+  "category":    "Database",
+  "abstract":    null,
+  "deadline":    "2026-06-17",
+  "notification":null,
+  "conf_start":  null,
+  "conf_end":    null,
+  "location":    "TBD",
+  "website":     "https://www.icde-conf.org/",
+  "estimated":   true,
+  "rolling":     null
+},
+
+{
+  "acronym":     "ICDE '27",
+  "cycle":       "Round 2",
+  "fullname":    "IEEE International Conference on Data Engineering",
+  "category":    "Database",
+  "abstract":    null,
+  "deadline":    "2026-10-26",
+  "notification":null,
+  "conf_start":  null,
+  "conf_end":    null,
+  "location":    "TBD",
+  "website":     "https://www.icde-conf.org/",
+  "estimated":   true,
+  "rolling":     null
 }
 
 ]
@@ -1152,8 +1389,8 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   var data = JSON.parse(document.getElementById('ddl-data').textContent);
 
   // Ranking sets keyed by the base conference acronym (without year).
-  var CSR  = new Set(['SC','HPDC','ICS','ASPLOS','ISCA','MICRO','HPCA','SOSP','OSDI','EuroSys','FAST','ATC','SIGCOMM','NSDI']);
-  var CCFA = new Set(['SC','HPDC','PPoPP','ASPLOS','ISCA','MICRO','HPCA','SOSP','OSDI','EuroSys','FAST','ATC','SIGCOMM','NSDI']);
+  var CSR  = new Set(['SC','HPDC','ICS','ASPLOS','ISCA','MICRO','HPCA','SOSP','OSDI','EuroSys','FAST','ATC','SIGCOMM','NSDI','SIGMOD','VLDB','ICDE','PLDI','POPL']);
+  var CCFA = new Set(['SC','HPDC','PPoPP','ASPLOS','ISCA','MICRO','HPCA','SOSP','OSDI','EuroSys','FAST','ATC','SIGCOMM','NSDI','SIGMOD','VLDB','ICDE','PLDI','POPL']);
   function baseAcronym(a) { return String(a || '').replace(/\s*['\u2019]?\d{2,4}\s*$/, ''); }
 
   function aoeEndOfDay(ds) {
@@ -1227,13 +1464,15 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
     var isPast = deadlineDate && deadlineDate <= now;
 
     var el = document.createElement('div');
-    var pastCls = (isPast || (!deadlineDate && confPast)) ? ' passed' : '';
+    var rolling = e.rolling && !confPast;
+    var pastCls = ((isPast && !e.rolling) || (!deadlineDate && !rolling && confPast)) ? ' passed' : '';
     var estCls = e.estimated ? ' estimated' : '';
     el.className = 'ddl-card cat-' + (e.category || 'Systems') + pastCls + estCls;
     el.dataset.category = e.category || '';
     el.dataset.sortKey = deadlineDate ? deadlineDate.toISOString()
-                        : (confEnd ? confEnd.toISOString() : '9999');
-    el.dataset.bucket = (isPast || confPast) ? 'past' : 'upcoming';
+                        : (confStart ? confStart.toISOString() : '9999');
+    el.dataset.bucket = rolling ? 'upcoming'
+                       : ((isPast || confPast) ? 'past' : 'upcoming');
 
     var estMark = e.estimated
       ? ' <span class="ddl-est" title="Estimated from the prior year\'s cadence; verify with the official CFP">Estimated</span>'
@@ -1263,7 +1502,9 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
       row('Location',     e.location || dash);
 
     var countdownHtml;
-    if (!deadlineDate) {
+    if (e.rolling) {
+      countdownHtml = '<div class="ddl-countdown text rolling">Rolling &mdash; submit any month</div>';
+    } else if (!deadlineDate) {
       countdownHtml = '<div class="ddl-countdown text ' + (confPast ? 'passed' : 'tbd') + '">' +
         (confPast ? 'Conference concluded' : 'Deadline TBA') + '</div>';
     } else {
@@ -1291,7 +1532,7 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   var filtersEl  = document.getElementById('ddl-filters');
 
   var upc = [], pst = [];
-  var byCat = { HPC: 0, Architecture: 0, Systems: 0, Networks: 0, Compiler: 0 };
+  var byCat = { HPC: 0, Architecture: 0, Systems: 0, Networks: 0, Database: 0, PL: 0 };
   data.forEach(function(e) {
     var el = card(e);
     if (e.category && byCat.hasOwnProperty(e.category)) byCat[e.category]++;
@@ -1333,7 +1574,7 @@ Cards marked <span class="ddl-est" style="cursor:default;">Estimated</span> have
   });
 
   // Filters
-  var cats = ['all', 'HPC', 'Architecture', 'Systems', 'Networks', 'Compiler'];
+  var cats = ['all', 'HPC', 'Architecture', 'Systems', 'Networks', 'Database', 'PL'];
   filtersEl.innerHTML = cats.map(function(c) {
     var count = c === 'all' ? data.length : (byCat[c] || 0);
     return '<button data-cat="' + c + '"' + (c === 'all' ? ' class="active"' : '') + '>' +
