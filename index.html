@@ -567,37 +567,48 @@ Advisor: Dr. <a href="https://www.cs.ucr.edu/~chen/superlab/people.html">Zizhong
   <li>Sports: 🏓 Table tennis</li>
 </ul>
 
-<!-- Visitor map: self-hosted via a Cloudflare Worker + D1 (code in visitor-counter/ in this repo).
-     After you deploy the Worker, set COUNTER_API below to your workers.dev URL.
-     Until it is set, the widget stays hidden, so this is safe to publish as-is. -->
+<!-- Visitor map: fully self-hosted — counter on a Cloudflare Worker + D1 (code in
+     visitor-counter/ in this repo), Leaflet served from /assets/leaflet/, and world
+     geometry from /assets/data/world-110m.geojson (Natural Earth, public domain).
+     No tile servers, no CDNs. On any error the widget simply stays hidden. -->
 <div id="visitor-widget" style="display:none; max-width:500px; margin-top:1em;">
 <h3 style="margin-bottom:0.4em;">Visitor Map</h3>
-<div id="visitor-map" style="height:320px; border-radius:8px; overflow:hidden;"></div>
+<div id="visitor-map" style="height:300px; background:#fff; border:1px solid #e3e3e3; border-radius:8px; overflow:hidden;"></div>
 <p id="visitor-stats" style="font-size:0.9em; color:#666; margin-top:0.4em;"></p>
 </div>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="/assets/leaflet/leaflet.css" />
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/assets/leaflet/leaflet.js"></script>
 
 <script>
 (function () {
   var COUNTER_API = "https://visitor-counter.highperforcom.workers.dev";
-  if (COUNTER_API.indexOf("YOUR-SUBDOMAIN") !== -1) return; // not configured yet: keep the widget hidden
-  fetch(COUNTER_API + "/hit", { method: "POST" })
-    .then(function (r) { return r.json(); })
-    .then(function (data) {
+  Promise.all([
+    fetch(COUNTER_API + "/hit", { method: "POST" }).then(function (r) { return r.json(); }),
+    fetch("/assets/data/world-110m.geojson").then(function (r) { return r.json(); })
+  ])
+    .then(function (results) {
+      var data = results[0], world = results[1];
       document.getElementById("visitor-widget").style.display = "block";
       document.getElementById("visitor-stats").textContent =
         Number(data.views || 0).toLocaleString() + " views · " +
         Number(data.uniques || 0).toLocaleString() + " unique visitors";
-      var map = L.map("visitor-map", { worldCopyJump: true }).setView([20, 0], 1);
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: "&copy; OpenStreetMap contributors", maxZoom: 7
+      var map = L.map("visitor-map", {
+        attributionControl: false,
+        maxBounds: [[-62, -185], [86, 185]],
+        maxBoundsViscosity: 1.0,
+        minZoom: 1,
+        maxZoom: 6,
+        zoomSnap: 0.25
+      });
+      L.geoJSON(world, {
+        style: { fillColor: "#d8d8d8", fillOpacity: 1, color: "#ffffff", weight: 0.6 }
       }).addTo(map);
+      map.fitBounds([[-55, -168], [74, 178]]);
       (data.points || []).forEach(function (p) {
         L.circleMarker([p.lat, p.lng], {
           radius: Math.min(4 + Math.sqrt(p.count) * 2, 22),
-          color: "#ff5353", fillColor: "#ff5353", fillOpacity: 0.5, weight: 1
+          color: "#ff5353", fillColor: "#ff5353", fillOpacity: 0.55, weight: 1
         }).addTo(map).bindPopup(((p.city ? p.city + ", " : "") + (p.country || "")) + " — " + p.count);
       });
       setTimeout(function () { map.invalidateSize(); }, 200);
