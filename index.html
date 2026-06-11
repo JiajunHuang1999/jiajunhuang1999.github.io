@@ -564,9 +564,48 @@ Advisor: Dr. <a href="https://www.cs.ucr.edu/~chen/superlab/people.html">Zizhong
 <h3 id="personal-interests">Personal Interests</h3>
 <ul>
   <li>Music: 🎷 Saxophone, Cucurbit flute (Hulusi), Bamboo flute (Dizi), Vertical bamboo flute (Xiao)</li>
-  <li>Sports: 🏓 Table tennis
-<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=000000&amp;w=500&amp;t=tt&amp;d=RKFC0tf2HkUKuOKvsqRsBycAaOSTK6mnDby741hhPhI&amp;co=ffffff&amp;cmo=3acc3a&amp;cmn=ff5353&amp;ct=ffffff"></script></li>
+  <li>Sports: 🏓 Table tennis</li>
 </ul>
+
+<!-- Visitor map: self-hosted via a Cloudflare Worker + D1 (code in visitor-counter/ in this repo).
+     After you deploy the Worker, set COUNTER_API below to your workers.dev URL.
+     Until it is set, the widget stays hidden, so this is safe to publish as-is. -->
+<div id="visitor-widget" style="display:none; max-width:500px; margin-top:1em;">
+<h3 style="margin-bottom:0.4em;">Visitor Map</h3>
+<div id="visitor-map" style="height:320px; border-radius:8px; overflow:hidden;"></div>
+<p id="visitor-stats" style="font-size:0.9em; color:#666; margin-top:0.4em;"></p>
+</div>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+(function () {
+  var COUNTER_API = "https://visitor-counter.highperforcom.workers.dev";
+  if (COUNTER_API.indexOf("YOUR-SUBDOMAIN") !== -1) return; // not configured yet: keep the widget hidden
+  fetch(COUNTER_API + "/hit", { method: "POST" })
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      document.getElementById("visitor-widget").style.display = "block";
+      document.getElementById("visitor-stats").textContent =
+        Number(data.views || 0).toLocaleString() + " views · " +
+        Number(data.uniques || 0).toLocaleString() + " unique visitors";
+      var map = L.map("visitor-map", { worldCopyJump: true }).setView([20, 0], 1);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OpenStreetMap contributors", maxZoom: 7
+      }).addTo(map);
+      (data.points || []).forEach(function (p) {
+        L.circleMarker([p.lat, p.lng], {
+          radius: Math.min(4 + Math.sqrt(p.count) * 2, 22),
+          color: "#ff5353", fillColor: "#ff5353", fillOpacity: 0.5, weight: 1
+        }).addTo(map).bindPopup(((p.city ? p.city + ", " : "") + (p.country || "")) + " — " + p.count);
+      });
+      setTimeout(function () { map.invalidateSize(); }, 200);
+    })
+    .catch(function () { /* on any error, leave the widget hidden */ });
+})();
+</script>
+
 
 
         
@@ -625,7 +664,7 @@ Advisor: Dr. <a href="https://www.cs.ucr.edu/~chen/superlab/people.html">Zizhong
 
 <div class="page__footer-copyright">
   &copy; 2026 Jiajun Huang, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2026-05-29
+  Site last updated 2026-06-11
 </div>
 
       </footer>
