@@ -245,7 +245,7 @@
     <meta itemprop="headline" content="Terms and Privacy Policy">
     
     
-    <meta itemprop="dateModified" content="June 06, 2026">
+    <meta itemprop="dateModified" content="June 29, 2026">
 
     <div class="page__inner-wrap">
       
@@ -254,7 +254,7 @@
 </h1>
           
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2026-06-06">June 06, 2026</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2026-06-29">June 29, 2026</time></p>
         
         
             
@@ -273,7 +273,7 @@
           <li><a href="#google-analytics" id="markdown-toc-google-analytics">Google Analytics</a></li>
         </ul>
       </li>
-      <li><a href="#visitor-map" id="markdown-toc-visitor-map">Visitor Map</a></li>
+      <li><a href="#visitor-map-and-visit-log" id="markdown-toc-visitor-map-and-visit-log">Visitor Map and Visit Log</a></li>
     </ul>
   </li>
 </ul>
@@ -314,14 +314,17 @@
 
 <p>Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read <a href="http://www.google.com/analytics/learn/privacy.html">Google Analytics Privacy Policy</a>.</p>
 
-<h3 id="visitor-map">Visitor Map</h3>
+<h3 id="visitor-map-and-visit-log">Visitor Map and Visit Log</h3>
 
-<p>This site displays a small visitor map showing an aggregate page-view count, a unique-visitor count, and approximate visitor locations. It is <strong>self-hosted</strong> — a Cloudflare Worker with a database that I control — and it works as follows:</p>
+<p>This site runs a small <strong>self-hosted</strong> analytics counter — a Cloudflare Worker with a database that I control. It sets <strong>no cookies</strong> and shares no data with any third party. It serves two purposes:</p>
 
 <ul>
-  <li>Your <strong>approximate location</strong> (city level, derived from your IP address by Cloudflare’s edge network) is recorded so it can appear as a dot on the map. Locations are rounded to roughly an 11 km grid; exact coordinates are never stored or shown.</li>
-  <li>Your <strong>raw IP address is never stored.</strong> To count unique visitors without identifying you, only a one-way salted hash of your IP address and browser user-agent is kept; it cannot be reversed back into your IP address.</li>
-  <li>The visitor map sets <strong>no cookies</strong>, and its data is not shared with any third party.</li>
+  <li>
+    <p><strong>Public visitor map.</strong> The site shows an aggregate page-view count, a unique-visitor count, and a world map of approximate visitor locations. Map locations are <strong>city level only</strong> — derived from your IP address by Cloudflare’s edge network and rounded to roughly an 11 km grid; exact coordinates are never shown. The public map and counts never expose any individual visitor’s IP address.</p>
+  </li>
+  <li>
+    <p><strong>Private visit log (for site administration only).</strong> For my own administration of the site, the counter also keeps a log of recent visits. For each visit it records the timestamp, your approximate city/country, a summary of your device (browser and operating system), and your <strong>IP address</strong>. This log is <strong>private</strong>: it is accessible only to me behind a secret key, is never shown publicly or shared with anyone, and is automatically limited to the most recent visits. If you would like your entry removed, contact me at the email address on my home page.</p>
+  </li>
 </ul>
 
 
@@ -381,7 +384,7 @@
 
 <div class="page__footer-copyright">
   &copy; 2026 Jiajun Huang, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2026-06-26
+  Site last updated 2026-06-29
 </div>
 
       </footer>
