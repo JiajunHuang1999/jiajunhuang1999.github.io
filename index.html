@@ -276,7 +276,7 @@
 <div style="height: 200px; overflow: auto;">
 <ul>
 	<li>
-		[7/2026] Both of our papers have been accepted to <a href="https://sc26.supercomputing.org/">SC '26</a>! This includes Jiefeng's first paper — accepted on his first submission in his first year as a Ph.D. student — and my first single-author paper.
+		[7/2026] Both of our papers have been accepted to <a href="https://sc26.supercomputing.org/">SC '26</a>! One is Jiefeng's first paper, accepted on his first submission in his first year as a Ph.D. student, and the other is my first single-author paper.
 	</li>
 	<li>
 		[5/2026] Our ICS '26 paper, <em>OCTANE: Breaking the Neighbor-List Bottleneck in GPU Molecular Dynamics</em>, has received a Best Paper Nomination!
@@ -570,7 +570,7 @@ Advisor: Dr. <a href="https://www.cs.ucr.edu/~chen/superlab/people.html">Zizhong
   <li>Sports: 🏓 Table tennis</li>
 </ul>
 
-<!-- Visitor map: fully self-hosted — counter on a Cloudflare Worker + D1 (code in
+<!-- Visitor map: fully self-hosted; counter on a Cloudflare Worker + D1 (code in
      visitor-counter/ in this repo), Leaflet served from /assets/leaflet/, and world
      geometry from /assets/data/world-110m.geojson (Natural Earth, public domain).
      No tile servers, no CDNs. On any error the widget simply stays hidden. -->
@@ -612,7 +612,7 @@ Advisor: Dr. <a href="https://www.cs.ucr.edu/~chen/superlab/people.html">Zizhong
         L.circleMarker([p.lat, p.lng], {
           radius: Math.min(4 + Math.sqrt(p.count) * 2, 22),
           color: "#ff5353", fillColor: "#ff5353", fillOpacity: 0.55, weight: 1
-        }).addTo(map).bindPopup(((p.city ? p.city + ", " : "") + (p.country || "")) + " — " + p.count);
+        }).addTo(map).bindPopup(((p.city ? p.city + ", " : "") + (p.country || "")) + ": " + p.count);
       });
       setTimeout(function () { map.invalidateSize(); }, 200);
     })
