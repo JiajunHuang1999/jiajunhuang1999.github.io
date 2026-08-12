@@ -34,7 +34,7 @@ redirect_from:
 
 ### 你将获得
 
-* **顶级计算资源**：实验室每位学生稳定配有一块以上 NVIDIA B200 GPU（数量持续增加中），并可直接使用包括但不限于数千张 A100 GPU、Frontier、Aurora 等世界顶级超级计算机
+* **顶级计算资源**：实验室每位学生稳定配有两块以上 NVIDIA B200 GPU（数量持续增加中），并可直接使用包括但不限于数千张 A100 GPU、Frontier、Aurora 等世界顶级超级计算机
 * **前沿科研指导**：导师研究成果屡获顶会最佳论文荣誉（ICS '26 Best Paper Award、SC '26 Best Paper Nomination、HPDC '25 Best Paper Finalist），研究被学术界 & 工业界广泛讨论和应用
 * **丰厚的奖学金**：所有录取博士生均提供全额奖学金（包含学费 + 生活费 + 医疗保险）
 * **科研设备支持**：提供最新款 MacBook 或高性能 PC，确保高效科研体验
