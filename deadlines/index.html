@@ -339,7 +339,7 @@
   .ddl-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-rows: 1fr;
+    grid-auto-rows: auto;
     gap: 14px;
   }
 
@@ -514,8 +514,10 @@ A live tracker of paper submission deadlines for the conferences I follow, cover
 <strong>networks</strong> (SIGCOMM, NSDI),
 <strong>databases</strong> (SIGMOD, VLDB, ICDE), and
 <strong>programming languages</strong> (PLDI, POPL, CGO).
-All times are <strong>AoE</strong> (Anywhere on Earth, UTC&minus;12); countdowns use your local clock and tick live.
-Click a stat chip to switch between upcoming and past, and a category pill to narrow by area.
+Paper and abstract deadlines are <strong>AoE</strong> (Anywhere on Earth, UTC&minus;12) unless noted by the official CFP; countdowns use your local clock and tick live.
+Review milestones such as author-response periods and revision deadlines are shown when officially announced.
+Recurring or conditional steps without a fixed calendar date remain described on the linked CFP.
+Click a stat chip to switch between upcoming and past paper deadlines, and a category pill to narrow by area.
 Badges flag conferences tracked by <a href="https://csrankings.org/#/fromyear/2021/toyear/2026/index?arch&comm&sec&mod&hpc&mobile&metrics&ops&plan&soft&da&bed&us">CSRankings</a> (<span class="ddl-badge csr" style="cursor:default;">CSRankings</span>) and those on the <a href="https://ccf.atom.im">CCF</a> Class-A list (<span class="ddl-badge ccf" style="cursor:default;">CCF-A</span>).
 A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means the deadline is inferred from the prior year's cadence &mdash; double-check the official CFP before relying on it. VLDB uses PVLDB's rolling monthly submissions (1st of each month), so it shows "Rolling" instead of a countdown.
 </p>
@@ -540,7 +542,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "HPC",
   "abstract":    "2026-04-01",
   "deadline":    "2026-04-08",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-07-01",
+  "milestones":  [{"label":"Author response","start":"2026-06-08","end":"2026-06-11"},{"label":"Final paper","start":"2026-08-28"}],
   "conf_start":  "2026-11-15",
   "conf_end":    "2026-11-20",
   "location":    "Chicago, IL, USA",
@@ -556,7 +561,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "HPC",
   "abstract":    "2026-04-24",
   "deadline":    "2026-05-01",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-06-30",
+  "milestones":  [{"label":"Final paper","start":"2026-07-30"}],
   "conf_start":  "2026-09-28",
   "conf_end":    "2026-10-01",
   "location":    "Singapore",
@@ -572,7 +580,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "HPC",
   "abstract":    null,
   "deadline":    "2027-04-30",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":null,
+  "milestones":  null,
   "conf_start":  null,
   "conf_end":    null,
   "location":    "TBD",
@@ -583,12 +594,15 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
 
 {
   "acronym":     "ASPLOS '27",
-  "cycle":       "Fall cycle",
+  "cycle":       "September cycle",
   "fullname":    "ACM Int'l Conference on Architectural Support for Programming Languages and Operating Systems",
   "category":    "Architecture",
   "abstract":    null,
   "deadline":    "2026-09-09",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-12-21",
+  "milestones":  [{"label":"Author response","start":"2026-12-01","end":"2026-12-04","timezone":"AoE"}],
   "conf_start":  "2027-04-11",
   "conf_end":    "2027-04-15",
   "location":    "Crete, Greece",
@@ -599,12 +613,15 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
 
 {
   "acronym":     "ASPLOS '27",
-  "cycle":       "Spring cycle",
+  "cycle":       "April cycle",
   "fullname":    "ACM Int'l Conference on Architectural Support for Programming Languages and Operating Systems",
   "category":    "Architecture",
   "abstract":    null,
   "deadline":    "2026-04-15",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-07-27",
+  "milestones":  [{"label":"Author response","start":"2026-07-06","end":"2026-07-09","timezone":"AoE"}],
   "conf_start":  "2027-04-11",
   "conf_end":    "2027-04-15",
   "location":    "Crete, Greece",
@@ -620,7 +637,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "HPC",
   "abstract":    "2026-01-29",
   "deadline":    "2026-02-05",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-03-31",
+  "milestones":  [{"label":"Final paper","start":"2026-04-30"}],
   "conf_start":  "2026-07-13",
   "conf_end":    "2026-07-16",
   "location":    "Cleveland, OH, USA",
@@ -636,7 +656,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "HPC",
   "abstract":    "2026-02-02",
   "deadline":    "2026-02-09",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-04-06",
+  "milestones":  [{"label":"Author response","start":"2026-03-24","end":"2026-03-26"},{"label":"Camera ready","start":"2026-05-06"}],
   "conf_start":  "2026-07-06",
   "conf_end":    "2026-07-09",
   "location":    "Belfast, UK",
@@ -652,7 +675,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "HPC",
   "abstract":    "2025-12-09",
   "deadline":    "2025-12-16",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-02-24",
+  "milestones":  [{"label":"Author response","start":"2026-02-10","end":"2026-02-12"},{"label":"Camera ready","start":"2026-03-24"}],
   "conf_start":  "2026-07-06",
   "conf_end":    "2026-07-09",
   "location":    "Belfast, UK",
@@ -668,7 +694,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "HPC",
   "abstract":    "2025-10-02",
   "deadline":    "2025-10-09",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-02-02",
+  "milestones":  [{"label":"Author response","start":"2025-12-01","end":"2025-12-04"},{"label":"First decision","start":"2025-12-18"},{"label":"Revision due","start":"2026-01-19"},{"label":"Camera ready","start":"2026-02-20"}],
   "conf_start":  "2026-05-25",
   "conf_end":    "2026-05-29",
   "location":    "New Orleans, LA, USA",
@@ -684,7 +713,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "HPC",
   "abstract":    null,
   "deadline":    "2025-09-01",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2025-11-10",
+  "milestones":  [{"label":"Author response","start":"2025-11-02","end":"2025-11-04","timezone":"AoE"}],
   "conf_start":  "2026-01-31",
   "conf_end":    "2026-02-04",
   "location":    "Sydney, Australia",
@@ -700,7 +732,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "PL",
   "abstract":    null,
   "deadline":    "2025-09-11",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2025-11-03",
+  "milestones":  [{"label":"Author response","start":"2025-10-21","end":"2025-10-23","timezone":"AoE"}],
   "conf_start":  "2026-01-31",
   "conf_end":    "2026-02-04",
   "location":    "Sydney, Australia",
@@ -716,7 +751,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "PL",
   "abstract":    null,
   "deadline":    "2025-05-29",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2025-07-21",
+  "milestones":  [{"label":"Author response","start":"2025-07-08","end":"2025-07-10","timezone":"AoE"}],
   "conf_start":  "2026-01-31",
   "conf_end":    "2026-02-04",
   "location":    "Sydney, Australia",
@@ -732,7 +770,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "HPC",
   "abstract":    null,
   "deadline":    "2026-08-03",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-10-26",
+  "milestones":  [{"label":"Author response","start":"2026-10-06","end":"2026-10-08","timezone":"AoE"}],
   "conf_start":  "2027-03-20",
   "conf_end":    "2027-03-24",
   "location":    "Salt Lake City, UT, USA",
@@ -748,7 +789,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "PL",
   "abstract":    null,
   "deadline":    "2026-09-10",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-11-09",
+  "milestones":  [{"label":"Author response","start":"2026-10-27","end":"2026-10-29","timezone":"AoE"}],
   "conf_start":  "2027-03-20",
   "conf_end":    "2027-03-24",
   "location":    "Salt Lake City, UT, USA",
@@ -764,7 +808,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "PL",
   "abstract":    null,
   "deadline":    "2026-06-11",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-08-03",
+  "milestones":  [{"label":"Author response","start":"2026-07-21","end":"2026-07-23","timezone":"AoE"},{"label":"Invited revision due","start":"2026-09-24","timezone":"AoE"}],
   "conf_start":  "2027-03-20",
   "conf_end":    "2027-03-24",
   "location":    "Salt Lake City, UT, USA",
@@ -780,7 +827,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "PL",
   "abstract":    null,
   "deadline":    "2025-11-13",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-03-05",
+  "milestones":  [{"label":"Author response","start":"2026-02-17","end":"2026-02-22","timezone":"AoE"},{"label":"Camera ready","start":"2026-04-16","timezone":"AoE"}],
   "conf_start":  "2026-06-15",
   "conf_end":    "2026-06-19",
   "location":    "Boulder, CO, USA",
@@ -796,7 +846,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "PL",
   "abstract":    null,
   "deadline":    "2026-11-12",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2027-03-04",
+  "milestones":  [{"label":"Author response","start":"2027-02-16","end":"2027-02-18","timezone":"AoE"},{"label":"Revision due","start":"2027-03-23","timezone":"AoE"},{"label":"Final acceptance notification","start":"2027-04-01"},{"label":"Camera ready","start":"2027-04-15","timezone":"AoE"}],
   "conf_start":  "2027-06-05",
   "conf_end":    "2027-06-11",
   "location":    "Atlanta, GA, USA",
@@ -812,7 +865,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "PL",
   "abstract":    null,
   "deadline":    "2026-07-09",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-10-05",
+  "milestones":  [{"label":"Author response","start":"2026-09-07","end":"2026-09-10","timezone":"AoE"},{"label":"Revision due","start":"2026-10-26","timezone":"AoE"},{"label":"Final acceptance notification","start":"2026-11-09"},{"label":"Camera ready","start":"2026-11-20","timezone":"AoE"}],
   "conf_start":  "2027-01-10",
   "conf_end":    "2027-01-16",
   "location":    "Mexico City, Mexico",
@@ -828,7 +884,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "HPC",
   "abstract":    "2026-10-01",
   "deadline":    "2026-10-08",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2027-02-01",
+  "milestones":  [{"label":"Author response","start":"2026-11-30","end":"2026-12-03"},{"label":"First decision","start":"2026-12-18"},{"label":"Revision due","start":"2027-01-18"},{"label":"Camera ready","start":"2027-02-19"}],
   "conf_start":  "2027-06-01",
   "conf_end":    "2027-06-05",
   "location":    "Seattle, WA, USA",
@@ -844,7 +903,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "HPC",
   "abstract":    "2026-12-08",
   "deadline":    "2026-12-15",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":null,
+  "milestones":  null,
   "conf_start":  null,
   "conf_end":    null,
   "location":    "Atlanta, GA, USA",
@@ -860,7 +922,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "HPC",
   "abstract":    "2027-02-01",
   "deadline":    "2027-02-08",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":null,
+  "milestones":  null,
   "conf_start":  null,
   "conf_end":    null,
   "location":    "Atlanta, GA, USA",
@@ -876,7 +941,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "HPC",
   "abstract":    "2027-01-28",
   "deadline":    "2027-02-04",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":null,
+  "milestones":  null,
   "conf_start":  null,
   "conf_end":    null,
   "location":    "TBD",
@@ -892,7 +960,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "HPC",
   "abstract":    "2027-04-07",
   "deadline":    "2027-04-14",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":null,
+  "milestones":  null,
   "conf_start":  "2027-11-14",
   "conf_end":    "2027-11-19",
   "location":    "TBD",
@@ -908,7 +979,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Architecture",
   "abstract":    "2026-03-31",
   "deadline":    "2026-04-07",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-07-07",
+  "milestones":  [{"label":"Rebuttal/Revision","start":"2026-06-03","end":"2026-06-17"},{"label":"Camera ready","start":"2026-09-11"}],
   "conf_start":  "2026-10-31",
   "conf_end":    "2026-11-04",
   "location":    "Athens, Greece",
@@ -924,7 +998,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Architecture",
   "abstract":    "2025-11-10",
   "deadline":    "2025-11-17",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-03-27",
+  "milestones":  [{"label":"Rebuttal/Revision","start":"2026-02-16","end":"2026-03-06","timezone":"AoE"},{"label":"Camera ready","start":"2026-05-06","timezone":"5pm PT"}],
   "conf_start":  "2026-06-27",
   "conf_end":    "2026-07-01",
   "location":    "Raleigh, NC, USA",
@@ -938,9 +1015,12 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "cycle":       null,
   "fullname":    "IEEE International Symposium on High-Performance Computer Architecture",
   "category":    "Architecture",
-  "abstract":    null,
+  "abstract":    "2025-07-25",
   "deadline":    "2025-08-01",
-  "notification":null,
+  "deadline_at": "2025-08-01T23:59:00+00:00",
+  "submission_timezone": "23:59 UTC",
+  "notification":"2025-11-07",
+  "milestones":  [{"label":"Revision/rebuttal","start":"2025-10-07","end":"2025-10-20"},{"label":"Final paper","start":"2025-12-04"}],
   "conf_start":  "2026-01-31",
   "conf_end":    "2026-02-04",
   "location":    "Sydney, Australia",
@@ -956,7 +1036,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Architecture",
   "abstract":    "2026-07-24",
   "deadline":    "2026-07-31",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-11-06",
+  "milestones":  [{"label":"Revision/rebuttal","start":"2026-09-28","end":"2026-10-09"}],
   "conf_start":  "2027-03-20",
   "conf_end":    "2027-03-24",
   "location":    "Salt Lake City, UT, USA",
@@ -972,7 +1055,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Systems",
   "abstract":    "2026-03-26",
   "deadline":    "2026-04-01",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-07-03",
+  "milestones":  [{"label":"Author response","start":"2026-06-22","end":"2026-06-24"},{"label":"Camera ready","start":"2026-08-28"}],
   "conf_start":  "2026-09-29",
   "conf_end":    "2026-10-02",
   "location":    "Prague, Czechia",
@@ -988,7 +1074,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Systems",
   "abstract":    "2025-12-04",
   "deadline":    "2025-12-11",
+  "deadline_at": "2025-12-11T17:59:00-05:00",
+  "submission_timezone": "5:59pm EST",
   "notification":"2026-03-26",
+  "milestones":  [{"label":"Final paper","start":"2026-06-09"}],
   "conf_start":  "2026-07-13",
   "conf_end":    "2026-07-15",
   "location":    "Seattle, WA, USA",
@@ -1004,7 +1093,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Systems",
   "abstract":    "2025-09-18",
   "deadline":    "2025-09-25",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-01-30",
+  "milestones":  [{"label":"Author response","start":"2026-01-07","end":"2026-01-09","timezone":"AoE"},{"label":"Camera ready","start":"2026-03-06","timezone":"AoE"},{"label":"One-shot revision due","start":"2026-05-14","timezone":"AoE"}],
   "conf_start":  "2026-04-27",
   "conf_end":    "2026-04-30",
   "location":    "Edinburgh, UK",
@@ -1020,7 +1112,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Systems",
   "abstract":    "2025-05-08",
   "deadline":    "2025-05-15",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2025-08-22",
+  "milestones":  [{"label":"Author response","start":"2025-07-30","end":"2025-08-01","timezone":"AoE"},{"label":"One-shot revision due","start":"2025-09-25","timezone":"AoE"},{"label":"Camera ready","start":"2025-09-26","timezone":"AoE"}],
   "conf_start":  "2026-04-27",
   "conf_end":    "2026-04-30",
   "location":    "Edinburgh, UK",
@@ -1036,7 +1131,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Systems",
   "abstract":    "2026-09-17",
   "deadline":    "2026-09-24",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2027-01-29",
+  "milestones":  [{"label":"Author response","start":"2027-01-06","end":"2027-01-08","timezone":"AoE"},{"label":"Camera ready","start":"2027-03-05","timezone":"AoE"}],
   "conf_start":  "2027-04-19",
   "conf_end":    "2027-04-23",
   "location":    "Rabat, Morocco",
@@ -1052,7 +1150,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Systems",
   "abstract":    "2026-05-07",
   "deadline":    "2026-05-14",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-08-21",
+  "milestones":  [{"label":"Author response","start":"2026-07-29","end":"2026-07-31","timezone":"AoE"},{"label":"One-shot revision due","start":"2026-09-24","timezone":"AoE"},{"label":"Camera ready","start":"2026-09-25","timezone":"AoE"}],
   "conf_start":  "2027-04-19",
   "conf_end":    "2027-04-23",
   "location":    "Rabat, Morocco",
@@ -1068,7 +1169,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Systems",
   "abstract":    "2027-03-25",
   "deadline":    "2027-03-31",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":null,
+  "milestones":  null,
   "conf_start":  null,
   "conf_end":    null,
   "location":    "TBD",
@@ -1084,7 +1188,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Systems",
   "abstract":    "2026-12-01",
   "deadline":    "2026-12-08",
+  "deadline_at": "2026-12-08T17:59:00-05:00",
+  "submission_timezone": "5:59pm EST",
   "notification":"2027-03-16",
+  "milestones":  [{"label":"Final paper","start":"2027-06-03"}],
   "conf_start":  "2027-07-07",
   "conf_end":    "2027-07-09",
   "location":    "Baltimore, MD, USA",
@@ -1100,7 +1207,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Systems",
   "abstract":    null,
   "deadline":    "2026-06-10",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-09-18",
+  "milestones":  [{"label":"Early reject","start":"2026-08-01"},{"label":"Author response","start":"2026-08-29","end":"2026-09-02"},{"label":"Camera ready","start":"2026-10-16"}],
   "conf_start":  "2026-11-15",
   "conf_end":    "2026-11-18",
   "location":    "Hong Kong, China",
@@ -1116,7 +1226,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Systems",
   "abstract":    null,
   "deadline":    "2027-01-15",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":null,
+  "milestones":  null,
   "conf_start":  null,
   "conf_end":    null,
   "location":    "TBD",
@@ -1132,7 +1245,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Systems",
   "abstract":    null,
   "deadline":    "2026-09-15",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-12-08",
+  "milestones":  [{"label":"Author response","start":"2026-11-17","end":"2026-11-19","timezone":"23:59 AoE"},{"label":"Final paper","start":"2027-01-26","timezone":"23:59 AoE"}],
   "conf_start":  "2027-02-23",
   "conf_end":    "2027-02-25",
   "location":    "Renton, WA, USA",
@@ -1148,7 +1264,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Systems",
   "abstract":    null,
   "deadline":    "2026-03-17",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-06-04",
+  "milestones":  [{"label":"Author response","start":"2026-05-18","end":"2026-05-20","timezone":"23:59 AoE"},{"label":"Final paper","start":"2026-07-28","timezone":"23:59 AoE"},{"label":"One-shot revision due","start":"2026-09-15","timezone":"AoE"}],
   "conf_start":  "2027-02-23",
   "conf_end":    "2027-02-25",
   "location":    "Renton, WA, USA",
@@ -1164,7 +1283,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Systems",
   "abstract":    null,
   "deadline":    "2025-09-16",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2025-12-08",
+  "milestones":  [{"label":"Author response","start":"2025-11-18","end":"2025-11-20","timezone":"23:59 AoE"},{"label":"Final paper","start":"2026-01-27","timezone":"23:59 AoE"},{"label":"One-shot revision due","start":"2026-03-17","timezone":"AoE"}],
   "conf_start":  "2026-02-24",
   "conf_end":    "2026-02-26",
   "location":    "Santa Clara, CA, USA",
@@ -1180,7 +1302,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Systems",
   "abstract":    null,
   "deadline":    "2025-03-18",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2025-06-05",
+  "milestones":  [{"label":"Author response","start":"2025-05-20","end":"2025-05-22","timezone":"23:59 AoE"},{"label":"Final paper","start":"2025-07-29","timezone":"23:59 AoE"},{"label":"One-shot revision due","start":"2025-09-16","timezone":"AoE"}],
   "conf_start":  "2026-02-24",
   "conf_end":    "2026-02-26",
   "location":    "Santa Clara, CA, USA",
@@ -1196,7 +1321,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Networks",
   "abstract":    "2026-01-30",
   "deadline":    "2026-02-06",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-05-11",
+  "milestones":  [{"label":"Early notification","start":"2026-04-02"},{"label":"Rebuttal period","start":"2026-04-27","end":"2026-04-29"},{"label":"One-shot revision due","start":"2026-06-19"},{"label":"Revision result","start":"2026-06-29"},{"label":"Camera ready","start":"2026-07-03","timezone":"23:59 UTC"}],
   "conf_start":  "2026-08-17",
   "conf_end":    "2026-08-21",
   "location":    "Denver, CO, USA",
@@ -1212,7 +1340,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Networks",
   "abstract":    null,
   "deadline":    "tbd",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":null,
+  "milestones":  null,
   "conf_start":  "2027-08-08",
   "conf_end":    "2027-08-12",
   "location":    "Bangkok, Thailand",
@@ -1228,7 +1359,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Networks",
   "abstract":    "2025-09-11",
   "deadline":    "2025-09-18",
+  "deadline_at": "2025-09-18T23:59:00-07:00",
+  "submission_timezone": "11:59pm US PDT",
   "notification":"2025-12-09",
+  "milestones":  [{"label":"Final paper","start":"2026-03-05"},{"label":"One-shot revision due","start":"2026-04-23","timezone":"11:59pm US EDT"}],
   "conf_start":  "2026-05-04",
   "conf_end":    "2026-05-06",
   "location":    "Renton, WA, USA",
@@ -1244,7 +1378,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Networks",
   "abstract":    "2025-04-18",
   "deadline":    "2025-04-25",
+  "deadline_at": "2025-04-25T23:59:00-07:00",
+  "submission_timezone": "11:59pm US PDT",
   "notification":"2025-07-24",
+  "milestones":  [{"label":"One-shot revision due","start":"2025-09-18","timezone":"11:59pm US PDT"},{"label":"Final paper","start":"2025-10-27"}],
   "conf_start":  "2026-05-04",
   "conf_end":    "2026-05-06",
   "location":    "Renton, WA, USA",
@@ -1260,7 +1397,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Networks",
   "abstract":    "2026-09-10",
   "deadline":    "2026-09-17",
+  "deadline_at": "2026-09-17T23:59:00-04:00",
+  "submission_timezone": "11:59pm US EDT",
   "notification":"2026-12-08",
+  "milestones":  [{"label":"Final paper","start":"2027-03-04"}],
   "conf_start":  "2027-05-11",
   "conf_end":    "2027-05-13",
   "location":    "Providence, RI, USA",
@@ -1276,7 +1416,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Networks",
   "abstract":    "2026-04-16",
   "deadline":    "2026-04-23",
+  "deadline_at": "2026-04-23T23:59:00-04:00",
+  "submission_timezone": "11:59pm US EDT",
   "notification":"2026-07-23",
+  "milestones":  [{"label":"One-shot revision due","start":"2026-09-17","timezone":"11:59pm US EDT"},{"label":"Final paper","start":"2026-10-20"}],
   "conf_start":  "2027-05-11",
   "conf_end":    "2027-05-13",
   "location":    "Providence, RI, USA",
@@ -1292,7 +1435,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Database",
   "abstract":    "2025-10-10",
   "deadline":    "2025-10-17",
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":"2026-02-23",
+  "milestones":  [{"label":"Author feedback","start":"2025-12-01","end":"2025-12-08","timezone":"AoE"},{"label":"Interactive discussion","start":"2025-12-09","end":"2025-12-15","timezone":"AoE"},{"label":"First decision","start":"2026-01-04","timezone":"AoE"},{"label":"Revision due","start":"2026-02-04","timezone":"AoE"}],
   "conf_start":  "2026-05-31",
   "conf_end":    "2026-06-05",
   "location":    "Bengaluru, India",
@@ -1308,7 +1454,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Database",
   "abstract":    "2026-07-10",
   "deadline":    "2026-07-17",
-  "notification":"2026-10-19",
+  "deadline_at": null,
+  "submission_timezone": null,
+  "notification":"2026-12-12",
+  "milestones":  [{"label":"Author feedback","start":"2026-09-10","end":"2026-09-17","timezone":"AoE"},{"label":"First decision","start":"2026-10-19","timezone":"AoE"},{"label":"Revision due","start":"2026-11-19","timezone":"AoE"}],
   "conf_start":  "2027-06-13",
   "conf_end":    "2027-06-19",
   "location":    "Huntington Beach, CA, USA",
@@ -1324,7 +1473,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Database",
   "abstract":    "2026-10-10",
   "deadline":    "2026-10-17",
-  "notification":"2027-01-19",
+  "deadline_at": null,
+  "submission_timezone": null,
+  "notification":"2027-03-12",
+  "milestones":  [{"label":"Author feedback","start":"2026-12-10","end":"2026-12-17","timezone":"AoE"},{"label":"First decision","start":"2027-01-19","timezone":"AoE"},{"label":"Revision due","start":"2027-02-19","timezone":"AoE"}],
   "conf_start":  "2027-06-13",
   "conf_end":    "2027-06-19",
   "location":    "Huntington Beach, CA, USA",
@@ -1340,7 +1492,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Database",
   "abstract":    null,
   "deadline":    null,
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":null,
+  "milestones":  null,
   "conf_start":  "2026-08-31",
   "conf_end":    "2026-09-04",
   "location":    "Boston, MA, USA",
@@ -1356,7 +1511,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Database",
   "abstract":    null,
   "deadline":    null,
+  "deadline_at": null,
+  "submission_timezone": null,
   "notification":null,
+  "milestones":  null,
   "conf_start":  "2027-08-23",
   "conf_end":    "2027-08-27",
   "location":    "Athens, Greece",
@@ -1372,7 +1530,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Database",
   "abstract":    null,
   "deadline":    "2025-10-27",
+  "deadline_at": "2025-10-27T17:00:00-07:00",
+  "submission_timezone": "5pm PT",
   "notification":"2026-02-23",
+  "milestones":  [{"label":"First decision","start":"2025-12-22","timezone":"5pm PT"},{"label":"Revision due","start":"2026-01-26","timezone":"5pm PT"}],
   "conf_start":  "2026-05-04",
   "conf_end":    "2026-05-08",
   "location":    "Montréal, Canada",
@@ -1388,7 +1549,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Database",
   "abstract":    null,
   "deadline":    "2025-06-18",
+  "deadline_at": "2025-06-18T17:00:00-07:00",
+  "submission_timezone": "5pm PT",
   "notification":"2025-10-20",
+  "milestones":  [{"label":"First decision","start":"2025-08-18","timezone":"5pm PT"},{"label":"Revision due","start":"2025-09-22","timezone":"5pm PT"}],
   "conf_start":  "2026-05-04",
   "conf_end":    "2026-05-08",
   "location":    "Montréal, Canada",
@@ -1404,7 +1568,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Database",
   "abstract":    null,
   "deadline":    "2026-06-11",
+  "deadline_at": "2026-06-11T17:00:00-07:00",
+  "submission_timezone": "5pm PT",
   "notification":"2026-09-10",
+  "milestones":  [{"label":"Rebuttal period","start":"2026-08-08","end":"2026-08-15","timezone":"5pm PT"},{"label":"Camera ready","start":"2026-10-10","timezone":"5pm PT"}],
   "conf_start":  "2027-05-17",
   "conf_end":    "2027-05-21",
   "location":    "Copenhagen, Denmark",
@@ -1420,7 +1587,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "category":    "Database",
   "abstract":    null,
   "deadline":    "2026-11-11",
+  "deadline_at": "2026-11-11T17:00:00-08:00",
+  "submission_timezone": "5pm PT",
   "notification":"2027-02-10",
+  "milestones":  [{"label":"Rebuttal period","start":"2027-01-08","end":"2027-01-15","timezone":"5pm PT"},{"label":"Camera ready","start":"2027-03-10","timezone":"5pm PT"}],
   "conf_start":  "2027-05-17",
   "conf_end":    "2027-05-21",
   "location":    "Copenhagen, Denmark",
@@ -1500,16 +1670,47 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
     return '<div class="ddl-row"><span class="k">' + k + '</span><span class="v" title="' + plain + '">' + v + '</span></div>';
   }
 
+  function timelineRows(items, notification, dash) {
+    var events = [];
+    if (Array.isArray(items)) {
+      items.forEach(function(m, index) {
+        var start = parseDate(m.start);
+        var end = parseDate(m.end);
+        if (!m.label || !start) return;
+        events.push({
+          label: m.label,
+          start: start,
+          end: end,
+          timezone: m.timezone || '',
+          order: index
+        });
+      });
+    }
+    var notifDate = parseDate(notification);
+    if (notifDate) {
+      events.push({ label: 'Notification', start: notifDate, end: null, timezone: '', order: 999 });
+    }
+    if (events.length === 0) return row('Notification', dash);
+    events.sort(function(a, b) {
+      return a.start - b.start || a.order - b.order;
+    });
+    return events.map(function(event) {
+      var value = fmtRange(event.start, event.end);
+      if (event.timezone) value += ' ' + event.timezone;
+      return row(event.label, value);
+    }).join('');
+  }
+
   function card(e) {
-    var deadlineDate = aoeEndOfDay(e.deadline);
-    var abstractDate = aoeEndOfDay(e.abstract);
-    var notifDate    = parseDate(e.notification);
+    var deadlineDate = parseDate(e.deadline);
+    var abstractDate = parseDate(e.abstract);
+    var deadlineMoment = e.deadline_at ? new Date(e.deadline_at) : aoeEndOfDay(e.deadline);
+    var submissionTimezone = e.submission_timezone || 'AoE';
     var confStart    = parseDate(e.conf_start);
     var confEnd      = parseDate(e.conf_end);
     var now = new Date();
     var confPast = confEnd && confEnd < now;
-    var isTbd = !deadlineDate && !confPast;
-    var isPast = deadlineDate && deadlineDate <= now;
+    var isPast = deadlineMoment && deadlineMoment <= now;
 
     var el = document.createElement('div');
     var rolling = e.rolling && !confPast;
@@ -1517,7 +1718,7 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
     var estCls = e.estimated ? ' estimated' : '';
     el.className = 'ddl-card cat-' + (e.category || 'Systems') + pastCls + estCls;
     el.dataset.category = e.category || '';
-    el.dataset.sortKey = deadlineDate ? deadlineDate.toISOString()
+    el.dataset.sortKey = deadlineMoment ? deadlineMoment.toISOString()
                         : (confStart ? confStart.toISOString() : '9999');
     el.dataset.bucket = rolling ? 'upcoming'
                        : ((isPast || confPast) ? 'past' : 'upcoming');
@@ -1543,20 +1744,20 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
 
     var dash = '<span class="ddl-dash">&mdash;</span>';
     var rows =
-      row('Abstract',     abstractDate ? fmtDate(abstractDate) + ' AoE'            : dash) +
-      row('Paper',        deadlineDate ? fmtDate(deadlineDate) + ' AoE'            : dash) +
-      row('Notification', notifDate    ? fmtDate(notifDate)                        : dash) +
+      row('Abstract',     abstractDate ? fmtDate(abstractDate) + ' ' + submissionTimezone : dash) +
+      row('Paper',        deadlineDate ? fmtDate(deadlineDate) + ' ' + submissionTimezone : dash) +
+      timelineRows(e.milestones, e.notification, dash) +
       row('Conference',   confStart    ? fmtRange(confStart, confEnd)              : dash) +
       row('Location',     e.location || dash);
 
     var countdownHtml;
     if (e.rolling) {
       countdownHtml = '<div class="ddl-countdown text rolling">Rolling &mdash; submit any month</div>';
-    } else if (!deadlineDate) {
+    } else if (!deadlineMoment) {
       countdownHtml = '<div class="ddl-countdown text ' + (confPast ? 'passed' : 'tbd') + '">' +
         (confPast ? 'Conference concluded' : 'Deadline TBA') + '</div>';
     } else {
-      countdownHtml = '<div class="ddl-countdown" data-target="' + deadlineDate.toISOString() + '"></div>';
+      countdownHtml = '<div class="ddl-countdown" data-target="' + deadlineMoment.toISOString() + '"></div>';
     }
 
     var banner = e.estimated
