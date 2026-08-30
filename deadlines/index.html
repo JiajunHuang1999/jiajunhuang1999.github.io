@@ -495,8 +495,6 @@
   }
   .ddl-countdown.passed { background: #f3f4f6; color: var(--ddl-muted); }
   .ddl-countdown.tbd    { background: #fefce8; color: #854d0e; }
-  .ddl-countdown.rolling { background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%); color: #9d174d; }
-
   .ddl-rows { font-size: 0.82em; color: #374151; }
   .ddl-row { display: flex; justify-content: space-between; padding: 2px 0; gap: 10px; align-items: baseline; }
   .ddl-row .k { color: var(--ddl-muted); font-weight: 500; flex: 0 0 auto; }
@@ -519,7 +517,7 @@ Review milestones such as author-response periods and revision deadlines are sho
 Recurring or conditional steps without a fixed calendar date remain described on the linked CFP.
 Click a stat chip to switch between upcoming and past paper deadlines, and a category pill to narrow by area.
 Badges flag conferences tracked by <a href="https://csrankings.org/#/fromyear/2021/toyear/2026/index?arch&comm&sec&mod&hpc&mobile&metrics&ops&plan&soft&da&bed&us">CSRankings</a> (<span class="ddl-badge csr" style="cursor:default;">CSRankings</span>) and those on the <a href="https://ccf.atom.im">CCF</a> Class-A list (<span class="ddl-badge ccf" style="cursor:default;">CCF-A</span>).
-A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means the deadline is inferred from the prior year's cadence &mdash; double-check the official CFP before relying on it. For VLDB, the card automatically advances through PVLDB's official monthly submission cycles.
+A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means the deadline is inferred from the prior year's cadence &mdash; double-check the official CFP before relying on it. For VLDB, each official PVLDB monthly submission cycle is listed separately.
 </p>
 
 <div class="ddl-stats" id="ddl-stats"></div>
@@ -1497,6 +1495,46 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
 
 {
   "acronym":     "SIGMOD '27",
+  "cycle":       "Round 1",
+  "fullname":    "ACM SIGMOD International Conference on Management of Data (rolling quarterly rounds on the 17th)",
+  "category":    "Database",
+  "abstract":    "2026-01-10",
+  "deadline":    "2026-01-17",
+  "deadline_at": null,
+  "submission_timezone": null,
+  "notification":"2026-06-12",
+  "milestones":  [{"label":"Author feedback","start":"2026-03-10","end":"2026-03-17","timezone":"AoE"},{"label":"First decision","start":"2026-04-19","timezone":"AoE"},{"label":"Revision due","start":"2026-05-19","timezone":"AoE"}],
+  "conf_start":  "2027-06-13",
+  "conf_end":    "2027-06-19",
+  "location":    "Huntington Beach, CA, USA",
+  "website":     "https://2027.sigmod.org/calls_papers_important_dates.shtml",
+  "estimated":   null,
+  "rolling":     null,
+  "rolling_cycles": null
+},
+
+{
+  "acronym":     "SIGMOD '27",
+  "cycle":       "Round 2",
+  "fullname":    "ACM SIGMOD International Conference on Management of Data (rolling quarterly rounds on the 17th)",
+  "category":    "Database",
+  "abstract":    "2026-04-10",
+  "deadline":    "2026-04-17",
+  "deadline_at": null,
+  "submission_timezone": null,
+  "notification":"2026-09-12",
+  "milestones":  [{"label":"Author feedback","start":"2026-06-10","end":"2026-06-17","timezone":"AoE"},{"label":"First decision","start":"2026-07-19","timezone":"AoE"},{"label":"Revision due","start":"2026-08-19","timezone":"AoE"}],
+  "conf_start":  "2027-06-13",
+  "conf_end":    "2027-06-19",
+  "location":    "Huntington Beach, CA, USA",
+  "website":     "https://2027.sigmod.org/calls_papers_important_dates.shtml",
+  "estimated":   null,
+  "rolling":     null,
+  "rolling_cycles": null
+},
+
+{
+  "acronym":     "SIGMOD '27",
   "cycle":       "Round 3",
   "fullname":    "ACM SIGMOD International Conference on Management of Data (rolling quarterly rounds on the 17th)",
   "category":    "Database",
@@ -1509,7 +1547,7 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "conf_start":  "2027-06-13",
   "conf_end":    "2027-06-19",
   "location":    "Huntington Beach, CA, USA",
-  "website":     "https://2027.sigmod.org/",
+  "website":     "https://2027.sigmod.org/calls_papers_important_dates.shtml",
   "estimated":   null,
   "rolling":     null,
   "rolling_cycles": null
@@ -1529,7 +1567,7 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "conf_start":  "2027-06-13",
   "conf_end":    "2027-06-19",
   "location":    "Huntington Beach, CA, USA",
-  "website":     "https://2027.sigmod.org/",
+  "website":     "https://2027.sigmod.org/calls_papers_important_dates.shtml",
   "estimated":   null,
   "rolling":     null,
   "rolling_cycles": null
@@ -1696,14 +1734,29 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
     return fmtDate(a) + ' \u2013 ' + fmtDate(b);
   }
 
-  function nextRollingCycle(cycles, now) {
-    if (!Array.isArray(cycles)) return null;
-    for (var i = 0; i < cycles.length; i++) {
-      var deadline = new Date(cycles[i].deadline_at);
-      if (!isNaN(deadline.getTime()) && deadline > now) return cycles[i];
-    }
-    return null;
+  function expandRollingEntries(entries) {
+    var expanded = [];
+    entries.forEach(function(entry) {
+      if (!entry.rolling || !Array.isArray(entry.rolling_cycles)) {
+        expanded.push(entry);
+        return;
+      }
+      entry.rolling_cycles.forEach(function(cycle) {
+        var item = Object.assign({}, entry);
+        item.cycle = cycle.label;
+        item.abstract = cycle.abstract_at;
+        item.deadline = cycle.deadline_at;
+        item.deadline_at = cycle.deadline_at;
+        item.notification = cycle.notification_at;
+        item.rolling = false;
+        item.rolling_cycles = null;
+        expanded.push(item);
+      });
+    });
+    return expanded;
   }
+
+  data = expandRollingEntries(data);
 
   function pad(n) { return n < 10 ? '0' + n : '' + n; }
 
@@ -1767,15 +1820,10 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   }
 
   function card(e) {
+    var deadlineDate = parseDate(e.deadline);
+    var abstractDate = parseDate(e.abstract);
+    var deadlineMoment = e.deadline_at ? new Date(e.deadline_at) : aoeEndOfDay(e.deadline);
     var now = new Date();
-    var rollingCycle = e.rolling ? nextRollingCycle(e.rolling_cycles, now) : null;
-    var deadlineValue = rollingCycle ? rollingCycle.deadline_at : e.deadline;
-    var abstractValue = rollingCycle ? rollingCycle.abstract_at : e.abstract;
-    var notificationValue = rollingCycle ? rollingCycle.notification_at : e.notification;
-    var deadlineDate = parseDate(deadlineValue);
-    var abstractDate = parseDate(abstractValue);
-    var deadlineMoment = rollingCycle ? new Date(rollingCycle.deadline_at)
-                       : (e.deadline_at ? new Date(e.deadline_at) : aoeEndOfDay(e.deadline));
     var submissionTimezone = e.submission_timezone || 'AoE';
     var confStart    = parseDate(e.conf_start);
     var confEnd      = parseDate(e.conf_end);
@@ -1783,25 +1831,21 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
     var isPast = deadlineMoment && deadlineMoment <= now;
 
     var el = document.createElement('div');
-    var rolling = Boolean(rollingCycle);
-    var rollingClosed = e.rolling && Array.isArray(e.rolling_cycles) && !rollingCycle;
-    var pastCls = (isPast || rollingClosed || (!deadlineDate && !rolling && confPast)) ? ' passed' : '';
+    var pastCls = (isPast || (!deadlineDate && confPast)) ? ' passed' : '';
     var estCls = e.estimated ? ' estimated' : '';
     el.className = 'ddl-card cat-' + (e.category || 'Systems') + pastCls + estCls;
     el.dataset.category = e.category || '';
     el.dataset.sortKey = deadlineMoment ? deadlineMoment.toISOString()
                         : (confStart ? confStart.toISOString() : '9999');
-    el.dataset.bucket = rolling ? 'upcoming'
-                       : ((isPast || rollingClosed || confPast) ? 'past' : 'upcoming');
+    el.dataset.bucket = (isPast || confPast) ? 'past' : 'upcoming';
 
     var estMark = e.estimated
       ? ' <span class="ddl-est" title="Estimated from the prior year\'s cadence; verify with the official CFP">Estimated</span>'
       : '';
-    var activeCycle = rollingCycle ? rollingCycle.label : e.cycle;
     var head = '<div class="ddl-head">' +
       '<span class="ddl-acronym"><a href="' + (e.website || '#') + '" target="_blank" rel="noopener">' +
       e.acronym + '</a>' +
-      (activeCycle ? '<span class="ddl-cycle">' + activeCycle + '</span>' : '') +
+      (e.cycle ? '<span class="ddl-cycle">' + e.cycle + '</span>' : '') +
       estMark +
       '</span>' +
       '</div>';
@@ -1818,16 +1862,12 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
     var rows =
       row('Abstract',     abstractDate ? fmtDate(abstractDate) + ' ' + submissionTimezone : dash) +
       row('Paper',        deadlineDate ? fmtDate(deadlineDate) + ' ' + submissionTimezone : dash) +
-      timelineRows(e.milestones, notificationValue, dash) +
+      timelineRows(e.milestones, e.notification, dash) +
       row('Conference',   confStart    ? fmtRange(confStart, confEnd)              : dash) +
       row('Location',     e.location || dash);
 
     var countdownHtml;
-    if (rolling) {
-      countdownHtml = '<div class="ddl-countdown rolling" data-target="' + deadlineMoment.toISOString() + '"></div>';
-    } else if (rollingClosed) {
-      countdownHtml = '<div class="ddl-countdown text passed">Final monthly deadline passed</div>';
-    } else if (!deadlineMoment) {
+    if (!deadlineMoment) {
       countdownHtml = '<div class="ddl-countdown text ' + (confPast ? 'passed' : 'tbd') + '">' +
         (confPast ? 'Conference concluded' : 'Deadline TBA') + '</div>';
     } else {
@@ -1959,7 +1999,7 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
 
 <div class="page__footer-copyright">
   &copy; 2026 Jiajun Huang, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2026-08-29
+  Site last updated 2026-08-30
 </div>
 
       </footer>
