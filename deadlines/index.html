@@ -498,7 +498,7 @@
   .ddl-rows { font-size: 0.82em; color: #374151; }
   .ddl-row { display: flex; justify-content: space-between; padding: 2px 0; gap: 10px; align-items: baseline; }
   .ddl-row .k { color: var(--ddl-muted); font-weight: 500; flex: 0 0 auto; }
-  .ddl-row .v { text-align: right; flex: 1 1 auto; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ddl-row .v { text-align: right; flex: 1 1 auto; min-width: 0; white-space: normal; overflow-wrap: anywhere; }
   .ddl-dash { color: #d1d5db; }
 
   .ddl-empty { color: var(--ddl-muted); font-size: 0.9em; padding: 8px 0; }
@@ -783,11 +783,11 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "deadline_at": null,
   "submission_timezone": null,
   "notification":"2026-10-26",
-  "milestones":  [{"label":"Author response","start":"2026-10-06","end":"2026-10-08","timezone":"AoE"}],
+  "milestones":  [{"label":"Author response","start":"2026-10-08","end":"2026-10-10","timezone":"AoE"},{"label":"Artifact submission","start":"2026-11-09","timezone":"AoE"},{"label":"Artifact notification","start":"2026-12-14"},{"label":"Final paper","start":"2026-12-18","timezone":"AoE"}],
   "conf_start":  "2027-03-20",
   "conf_end":    "2027-03-24",
   "location":    "Salt Lake City, UT, USA",
-  "website":     "https://ppopp27.sigplan.org/",
+  "website":     "https://ppopp27.sigplan.org/track/PPoPP-2027-papers",
   "estimated":   null,
   "rolling":     null,
   "rolling_cycles": null
@@ -902,8 +902,8 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "deadline":    "2026-10-08",
   "deadline_at": null,
   "submission_timezone": null,
-  "notification":"2027-02-01",
-  "milestones":  [{"label":"Author response","start":"2026-11-30","end":"2026-12-03"},{"label":"First decision","start":"2026-12-18"},{"label":"Revision due","start":"2027-01-18"},{"label":"Camera ready","start":"2027-02-19"}],
+  "notification":"2027-02-02",
+  "milestones":  [{"label":"Author response","start":"2026-11-30","end":"2026-12-03"},{"label":"First decision","start":"2026-12-18"},{"label":"Revision due","start":"2027-01-18"},{"label":"Camera ready","start":"2027-02-20"}],
   "conf_start":  "2027-06-01",
   "conf_end":    "2027-06-05",
   "location":    "Seattle, WA, USA",
@@ -915,40 +915,20 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
 
 {
   "acronym":     "ICS '27",
-  "cycle":       "Round 1",
+  "cycle":       null,
   "fullname":    "ACM International Conference on Supercomputing",
   "category":    "HPC",
-  "abstract":    "2026-12-08",
-  "deadline":    "2026-12-15",
+  "abstract":    "2026-12-01",
+  "deadline":    "2026-12-07",
   "deadline_at": null,
   "submission_timezone": null,
-  "notification":null,
-  "milestones":  null,
-  "conf_start":  null,
-  "conf_end":    null,
+  "notification":"2027-03-12",
+  "milestones":  [{"label":"Early reject","start":"2027-02-11"},{"label":"Author revision","start":"2027-02-11","end":"2027-02-23","timezone":"AoE"}],
+  "conf_start":  "2027-06-05",
+  "conf_end":    "2027-06-11",
   "location":    "Atlanta, GA, USA",
-  "website":     "https://www.ics-conference.org/",
-  "estimated":   true,
-  "rolling":     null,
-  "rolling_cycles": null
-},
-
-{
-  "acronym":     "ICS '27",
-  "cycle":       "Round 2",
-  "fullname":    "ACM International Conference on Supercomputing",
-  "category":    "HPC",
-  "abstract":    "2027-02-01",
-  "deadline":    "2027-02-08",
-  "deadline_at": null,
-  "submission_timezone": null,
-  "notification":null,
-  "milestones":  null,
-  "conf_start":  null,
-  "conf_end":    null,
-  "location":    "Atlanta, GA, USA",
-  "website":     "https://www.ics-conference.org/",
-  "estimated":   true,
+  "website":     "https://klab-ai3.github.io/ics2027/",
+  "estimated":   null,
   "rolling":     null,
   "rolling_cycles": null
 },
@@ -1063,11 +1043,11 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
   "deadline_at": null,
   "submission_timezone": null,
   "notification":"2026-11-06",
-  "milestones":  [{"label":"Revision/rebuttal","start":"2026-09-28","end":"2026-10-09"}],
+  "milestones":  [{"label":"Revision/rebuttal","start":"2026-09-28","end":"2026-10-11","timezone":"AoE"}],
   "conf_start":  "2027-03-20",
   "conf_end":    "2027-03-24",
   "location":    "Salt Lake City, UT, USA",
-  "website":     "https://conf.researchr.org/home/hpca-2027",
+  "website":     "https://conf.researchr.org/track/hpca-2027/hpca-2027-main-conference",
   "estimated":   null,
   "rolling":     null,
   "rolling_cycles": null
@@ -1999,7 +1979,7 @@ A <span class="ddl-est" style="cursor:default;">Estimated</span> marker means th
 
 <div class="page__footer-copyright">
   &copy; 2026 Jiajun Huang, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2026-09-30
+  Site last updated 2026-10-02
 </div>
 
       </footer>
