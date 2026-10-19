@@ -13,7 +13,7 @@ redirect_from:
 
 黄嘉俊（ https://jiajunhuang1999.github.io ）于 2025 年秋季加入南佛罗里达大学（University of South Florida）人工智能、网安与计算学院，担任终身轨助理教授和博士生导师，主持 High Performance & Intelligence Lab（π Lab），现计划招收 2–4 名拟于 **2027 年春季或秋季入学**的计算机科学方向博士生。
 
-嘉俊于 2021 年本科毕业于电子科技大学和英国格拉斯哥大学，获格大一等荣誉学位，2022–2025 年就读于加州大学河滨分校，获计算机科学博士学位。其研究方向包括高性能计算与通信、高性能深度学习、并行与分布式系统以及大数据管理与分析等，已在 SC、ICS、IPDPS、HPDC、SIGMOD、PPoPP 等计算机系统领域顶级会议及期刊发表论文二十余篇。其科研成果荣获 **ICS '26 最佳论文奖（Best Paper Award）**、**SC '26 最佳论文提名**（独立作者论文，SC 近四十年历史上极为罕见）、**HPDC '25 最佳论文入围（Best Paper Finalist）**，并在国际顶级超算大会 SC '23 上荣获 **ACM 学生科研竞赛全球第一名**，另获 UCR Dissertation Completion Fellowship Award、UCR Dean's Distinguished Fellowship 等多项荣誉。
+嘉俊于 2021 年本科毕业于电子科技大学和英国格拉斯哥大学，获格大一等荣誉学位，2022–2025 年就读于加州大学河滨分校，获计算机科学博士学位。其研究方向包括高性能计算与通信、高性能深度学习、并行与分布式系统以及大数据管理与分析等，已在 SC、ICS、IPDPS、HPDC、SIGMOD、PPoPP 等计算机系统领域顶级会议及期刊发表论文二十余篇。其科研成果荣获 **ICS '26 最佳论文奖（Best Paper Award）**、**SC '26 最佳论文入围（Best Paper Finalist，不足投稿总数的 1%）**（独立作者论文，SC 近四十年历史上极为罕见）、**HPDC '25 最佳论文入围（Best Paper Finalist，不足投稿总数的 3%）**，并在国际顶级超算大会 SC '23 上荣获 **ACM 学生科研竞赛全球第一名**，另获 UCR Dissertation Completion Fellowship Award、UCR Dean's Distinguished Fellowship 等多项荣誉。
 
 **组内学生成长迅速：已有博士生在入学第一年、首次投稿即以第一作者在超算领域旗舰会议 SC 上发表论文。**
 
@@ -21,7 +21,7 @@ redirect_from:
 
 ### 学校 & 城市介绍
 
-南佛罗里达大学 (University of South Florida, USF) 是佛罗里达州前三大旗舰公立研究型大学之一，位于佛州坦帕市 (Tampa)，拥有 R1 最高研究水平机构认证，并于 2023 年受邀加入美国大学协会 (AAU)，成为美国和加拿大 71 所顶级研究型大学之一。**在 CSRankings 高性能计算（HPC）方向（2021–2026），USF 位列全美第 15、全球第 25。**
+南佛罗里达大学 (University of South Florida, USF) 是佛罗里达州前三大旗舰公立研究型大学之一，位于佛州坦帕市 (Tampa)，拥有 R1 最高研究水平机构认证，并于 2023 年受邀加入美国大学协会 (AAU)，成为美国和加拿大 71 所顶级研究型大学之一。**在最近五年（2022–2026）的 CSRankings 高性能计算（HPC）方向中，USF 位列全美第 10、全球并列第 21。**
 
 * 排名 & 研究实力：
    * 全美公立大学排名第 43（全美近十年排名增长最快）
@@ -35,7 +35,7 @@ redirect_from:
 ### 你将获得
 
 * **顶级计算资源**：实验室为每位学生稳定提供两块以上 NVIDIA B200 GPU 专属算力（数量持续增加中），并可直接使用包括但不限于数千张 A100 GPU、Frontier、Aurora 等世界顶级超级计算机
-* **前沿科研指导**：导师研究成果屡获顶会最佳论文荣誉（ICS '26 Best Paper Award、SC '26 Best Paper Nomination、HPDC '25 Best Paper Finalist），研究被学术界 & 工业界广泛讨论和应用
+* **前沿科研指导**：导师研究成果屡获顶会最佳论文荣誉（ICS '26 Best Paper Award、SC '26 Best Paper Finalist（不足投稿总数的 1%）、HPDC '25 Best Paper Finalist（不足投稿总数的 3%）），研究被学术界 & 工业界广泛讨论和应用
 * **丰厚的奖学金**：所有录取博士生均提供全额奖学金（包含学费 + 生活费 + 医疗保险）
 * **科研设备支持**：提供最新款 MacBook 或高性能 PC，确保高效科研体验
 * **顶级合作 & 实习机会**：与美国国家实验室 & 顶尖科技公司深度合作，为学生提供学术 & 业界的合作与实习机会
